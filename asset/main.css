@@ -9,11 +9,31 @@
 	overscroll-behavior-y: contain;
 }
 
+.presentation{
+  text-align: center;
+  margin: 5vw 10vw;
+  line-height: 2em;
+}
 #item1 h1{
   font-family: 'Decovar';
-  font-variation-settings: 'WMX2' 500;
+  font-variation-settings: 'BLDA' 1000;
+  font-size: 1.5em;
+  margin: 100px 0px;
+}
+
+#item1 h1:hover{
+  font-family: 'Decovar';
+  font-variation-settings: 'BLDA' 0;
+  font-size: 1.5em;
+  margin: 100px 0px;
+  letter-spacing: 10px;
+  transition: all .3s ease-in;
+}
+
+#item1 span{
+  font-family: 'Decovar';
+  font-variation-settings: 'WMX2' 300;
   font-size: 2.5em;
-  margin: 30px 0px;
 }
 
 #grid{
@@ -54,7 +74,7 @@
 
 .box-filter{
  display:block;
- height:100px;
+ height:25vh;
  font-size: 3em;
  -webkit-transition:all .5s linear;
  -moz-transition:all .5s linear;
@@ -75,7 +95,7 @@
   font-variation-settings: 'BLDA' 1000;
 }
 
-.box-filter:focus {
+.box-filter:hover {
   text-decoration:none;
   text-align:center;
   padding:5px 0;
@@ -87,7 +107,7 @@
  display:none;
 }
 
-.box-filter:focus p{
+.box-filter:hover p{
  display:contents;
 }
 
@@ -99,37 +119,37 @@ a:focus[data-filter]{
 
 
 div[data-filter="oiseaux"]{
-  background:#89d3ff;
+  background:#ccc0a9;
   color:white;
   text-transform: uppercase;
 }
 
 div[data-filter="rongeur"]{
-  background:#ff6161;
+  background:#d5c2a0;
   color:white;
   text-transform: uppercase;
 }
 
 div[data-filter="feliformes"]{
-  background:#ffc13b;
+  background:#e1c694;
   color:white;
   text-transform: uppercase;
 }
 
 div[data-filter="bovides"]{
-  background:#da70d6;
+  background:#e6c78f;
   color:white;
   text-transform: uppercase;
 }
 
 div[data-filter="all"]{
-  background:#1c1c1c;
+  background:#e6c78f;
   color:white;
   text-transform: uppercase;
 }
 
 div[data-filter="mamifere"]{
-  background:#7fe3b3;
+  background:#edc988;
   color:white;
   text-transform: uppercase;
 }
