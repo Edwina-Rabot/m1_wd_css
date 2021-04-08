@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'Decovar';
+  src: url(../fonts/DecovarAlpha-VF.ttf) format("truetype");
+  font-weight: 200;
+}
+.home {
+	scroll-behavior: smooth;
+	overflow: scroll;
+	overscroll-behavior-y: contain;
+}
+
+#item1 h1{
+  font-family: 'Decovar';
+  font-variation-settings: 'WMX2' 500;
+  font-size: 2.5em;
+  margin: 30px 0px;
+}
+
+#grid{
+  display: grid;
+  transition: transform 0.8s ease-in-out;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  
+}
+
+#grid a{
+  text-decoration:none;
+  text-align:center;
+  padding:5px 0;
+  color:white;
+  font-family: 'Decovar';
+}
+
+.filter {
+  text-decoration:none;
+  text-align:center;
+  padding:5px 0;
+  color:white;
+  font-size: 1.5em;
+  background:black;  
+  font-variation-settings: 'TRMD' 1000;
+
+}
+
+.filter a{
+  text-decoration:none;
+  text-align:center;
+  padding:5px 0;
+  color:white;
+  font-variation-settings: 'TRMD' 1000;
+}
+
+
+.box-filter{
+ display:block;
+ height:100px;
+ font-size: 3em;
+ -webkit-transition:all .5s linear;
+ -moz-transition:all .5s linear;
+ -o-transition:all .5s linear;
+ -ms-transition:all .5s linear;
+ transition:all .5s linear;
+ margin-top:20px;
+ text-align: center;
+  font-variation-settings: 'BLDA' 1000;
+}
+
+.box-filter a{
+  text-decoration:none;
+  font-size: 3em;
+  text-align:center;
+  padding:5px 0;
+  color:white;
+  font-variation-settings: 'BLDA' 1000;
+}
+
+.box-filter:focus {
+  text-decoration:none;
+  text-align:center;
+  padding:5px 0;
+  color:white;
+  font-variation-settings: 'BLDA' 0;
+}
+
+.box-filter p{
+ display:none;
+}
+
+.box-filter:focus p{
+ display:contents;
+}
+
+a:focus[data-filter]{
+    opacity:.8;
+    outline:none;
+}
+
+
+
+div[data-filter="oiseaux"]{
+  background:#89d3ff;
+  color:white;
+  text-transform: uppercase;
+}
+
+div[data-filter="rongeur"]{
+  background:#ff6161;
+  color:white;
+  text-transform: uppercase;
+}
+
+div[data-filter="feliformes"]{
+  background:#ffc13b;
+  color:white;
+  text-transform: uppercase;
+}
+
+div[data-filter="bovides"]{
+  background:#da70d6;
+  color:white;
+  text-transform: uppercase;
+}
+
+div[data-filter="all"]{
+  background:#1c1c1c;
+  color:white;
+  text-transform: uppercase;
+}
+
+div[data-filter="mamifere"]{
+  background:#7fe3b3;
+  color:white;
+  text-transform: uppercase;
+}
+
+a[data-filter="rongeur"]:focus ~ div:not([data-filter="rongeur"]){
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+
+}
+
+
+a[data-filter="feliformes"]:focus ~ div:not([data-filter="feliformes"]){
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+
+}
+
+a[data-filter="bovides"]:focus ~ div:not([data-filter="bovides"]){
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+
+}
+
+a[data-filter="oiseaux"]:focus ~ div:not([data-filter="oiseaux"]){
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+
+}
+a[data-filter="mamifere"]:focus ~ div:not([data-filter="mamifere"]){
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+
+}
