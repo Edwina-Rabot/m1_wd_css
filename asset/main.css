@@ -79,9 +79,8 @@ body{
 
 .presentation:hover span{
   font-family: 'Decovar';
-  font-variation-settings: "TRMD" 1000, "WMX2" 500;
+  font-variation-settings: 'BLDA' 1000;
   color: var(--color4);
-  text-transform: uppercase;
 }
 
 .box-1 {
