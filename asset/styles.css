@@ -211,6 +211,7 @@ h1{
     line-height: 2em;
     width: 85vw;
 }
+
 .content-presentation h1:hover{
   font-family: 'Decovar';
   font-variation-settings: 'BLDA' 0,'TRMD' 1000;
