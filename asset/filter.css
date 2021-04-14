@@ -1,0 +1,435 @@
+:root{
+--color1:#f4f3ee;
+--color2: #000; 
+--color3:#a5a58d; 
+--color4:#353535;
+
+--color5:#9c9c82;
+--color6:#949477;
+--color7:#8a8a6d;
+--color8:#7f7f64; 
+--color9:#7f7f64;
+--color10:#696953;
+--color11:#5e5e4a;
+--font-first-title:3em;}
+
+#grid{
+  display: grid;
+  transition: transform 0.8s ease-in-out;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  margin: 10px;
+}
+
+.filter01{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 10vh;
+}
+
+.filter02{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  height: 10vh;
+}
+
+.filter03{
+  grid-column-start: 5;
+  grid-column-end: 7;
+  height: 10vh;
+}
+
+.filter04{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 10vh;
+}
+
+
+#grid a{
+  text-decoration:none;
+  text-align:center;
+  padding:5px 0;
+  font-family: 'Decovar';
+  color: var(--color4);
+}
+
+.filter {
+  text-decoration:none;
+  text-align:center;
+  padding:5px 0;
+  color:var(--color4);
+  font-size: 0.7em;
+  font-variation-settings: 'TRMD' 1000;
+}
+
+.filter a{
+  text-decoration:none;
+  text-align:center;
+  padding:5px 0;
+  color:var(--color4);
+  font-variation-settings: 'TRMD' 1000;
+}
+
+.filter:hover a{
+color:var(--color4);}
+
+
+.border{
+  padding: 20px 40px;
+  background: none;
+  border: none;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer;
+  width: fit-content;
+  margin: auto;
+}
+.border:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 1px solid #000;
+  transition: transform 0.2s;
+}
+.border:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 1px solid var(--color3);
+  transition: transform 0.2s;
+}
+
+.border:after {
+  transform: translate(3px, 3px);
+}
+.border:before {
+  transform: translate(-3px, -3px)
+}
+.border:hover:after, .border:hover:before {
+  transform: translate(0);
+}
+
+.box-filter{
+ display:block;
+ height:25vh;
+ font-size: var(--font-first-title);
+ -webkit-transition:all .5s linear;
+ -moz-transition:all .5s linear;
+ -o-transition:all .5s linear;
+ -ms-transition:all .5s linear;
+ transition:all .5s linear;
+ margin-top:20px;
+ text-align: center;
+ font-variation-settings: 'BLDA' 1000;
+ color:var(--color4);
+}
+.box-filter svg{
+   display: none;
+}
+
+.box-filter:hover svg{
+ display: block;
+ position: relative;
+ min-width: 10vw;
+ height: 8vw;
+ margin: auto;
+}
+path {
+  stroke-width: 1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear infinite; 
+}
+
+@keyframes dash {
+ to {
+    stroke-dashoffset: 0;
+  }
+}
+.box-filter a{
+  text-decoration:none;
+  font-size: var(--font-first-title);
+  text-align:center;
+  padding:5px 0;
+  color:var(--color4);
+  font-variation-settings: 'BLDA' 1000;
+}
+
+.box-filter:hover{
+  text-decoration:none;
+  text-align:center;
+  padding:5px 0;
+  color:var(--color1);
+  font-variation-settings: 'BLDA' 0;
+}
+
+.box-filter:hover span{
+color: var(--color1);
+margin-left: 0.1em;}
+
+.box-filter p{
+ display:none;
+}
+
+.box-filter:hover p{
+ display:contents;
+ letter-spacing: 1vw;
+ color: var(--color1);
+}
+
+a:focus[data-filter]{
+    opacity:.8;
+    outline:none;
+}
+
+div[data-filter="cetaces"]{
+  background:var(--color3);
+  text-transform: uppercase;
+  min-width: max-content;
+}
+
+div[data-filter="mustelides"]{
+  background:var(--color3);
+  text-transform: uppercase;
+  min-width: max-content;
+}
+
+div[data-filter="oiseaux"]{
+  background:var(--color3);
+  text-transform: uppercase;
+  min-width: max-content;
+}
+
+div[data-filter="rongeur"]{
+  background:var(--color3);
+  text-transform: uppercase;
+  min-width: max-content;
+}
+
+div[data-filter="feliformes"]{
+  background:var(--color3);
+  text-transform: uppercase;
+  min-width: max-content;
+}
+
+div[data-filter="bovides"]{
+  background:var(--color3);
+  text-transform: uppercase;
+  min-width: max-content;
+}
+
+div[data-filter="all"]{
+  background:var(--color3);
+  text-transform: uppercase;
+  min-width: max-content;
+}
+
+div[data-filter="mamifere"]{
+  background:var(--color3);
+  text-transform: uppercase;
+  min-width: max-content;
+}
+
+div[data-filter="mamifere"]:hover{
+  background-color: var(--color5);
+  color:var(--color1);
+  text-transform: uppercase;
+  min-width: max-content;
+  min-height: min-content;
+}
+div[data-filter="rongeur"]:hover{
+  background-color: var(--color6);
+  color:var(--color1);
+  text-transform: uppercase;
+  min-width: max-content;
+  min-height: min-content;
+}
+div[data-filter="mustelides"]:hover{
+  background-color: var(--color7);
+  color:var(--color1);
+  text-transform: uppercase;
+  min-width: max-content;
+  min-height: min-content;
+}
+
+div[data-filter="feliformes"]:hover{
+  background-color:var(--color8);
+  color:var(--color1);
+  text-transform: uppercase;
+  min-width: max-content;
+  min-height: min-content;
+}
+div[data-filter="bovides"]:hover{
+  background-color:var(--color9);
+  color:var(--color1);
+  text-transform: uppercase;
+  min-width: max-content;
+  min-height: min-content;
+}
+div[data-filter="oiseaux"]:hover{
+  background-color:var(--color10);
+  color:var(--color1);
+  text-transform: uppercase;
+  min-width: max-content;
+  min-height: content;
+}
+
+div[data-filter="cetaces"]:hover{
+  background-color: var(--color11);
+  color:var(--color1);
+  text-transform: uppercase;
+  min-width: max-content;
+  min-height: min-content;
+}
+
+a[data-filter="rongeur"]:focus ~ div:not([data-filter="rongeur"]){
+  width:0;height:0;padding:0;margin:0;opacity:0;}
+  
+a[data-filter="mustelides"]:focus ~ div:not([data-filter="mustelides"]){
+  width:0;height:0;padding:0;margin:0;opacity:0;}
+
+a[data-filter="cetaces"]:focus ~ div:not([data-filter="cetaces"]){
+  width:0;height:0;padding:0;margin:0;opacity:0;}
+
+a[data-filter="feliformes"]:focus ~ div:not([data-filter="feliformes"]){
+  width:0;height:0;padding:0;margin:0;opacity:0;}
+
+a[data-filter="bovides"]:focus ~ div:not([data-filter="bovides"]){
+  width:0;height:0;padding:0;margin:0;opacity:0;}
+
+a[data-filter="oiseaux"]:focus ~ div:not([data-filter="oiseaux"]){
+  width:0;height:0;padding:0;margin:0;opacity:0;
+
+}
+a[data-filter="mamifere"]:focus ~ div:not([data-filter="rongeur"]):not([data-filter="feliformes"]):not([data-filter="mustelides"]){
+  width:0;height:0;padding:0;margin:0;opacity:0;}
+
+a[data-filter="autre"]:focus ~ div:not([data-filter="bovides"]):not([data-filter="cetaces"]):not([data-filter="oiseaux"]){
+  width:0;height:0;padding:0;margin:0;opacity:0;}
+
+
+@media only screen and (max-width: 1024px){
+#grid{
+  display: grid;
+  transition: transform 0.8s ease-in-out;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+.filter01{
+  grid-column-start: auto;
+  grid-column-end: auto;
+  height: 10vh;
+}
+
+.filter02{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  height: 10vh;
+}
+
+.filter03{
+  grid-column-start: auto;
+  grid-column-end: auto;
+  height: 10vh;
+}
+
+.filter04{
+  grid-column-start: auto;
+  grid-column-end: auto;
+  height: 10vh;
+}
+.filter05{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  height: 10vh;
+}
+.filter08{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  height: 10vh;
+}
+
+.filter09{
+  grid-column-start: auto;
+  grid-column-end: auto;
+  height: 10vh;
+}
+}
+
+@media (max-width: 600px){
+#grid{
+  display: grid;
+  transition: transform 0.8s ease-in-out;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+}
+
+#grid {
+  display: grid;
+  transition: transform 0.8s ease-in-out;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;    
+}
+
+.filter01{
+  grid-column-start: auto;
+  grid-column-end: auto;
+  height: 10vh;
+}
+
+.filter02{
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 3;
+  height: 10vh;
+}
+
+.filter03{
+  grid-column-start: auto;
+  grid-column-end: auto;
+  height: 10vh;
+}
+
+.filter04{
+  grid-column-start: auto;
+  grid-column-end: auto;
+  height: 10vh;
+}
+
+.filter05{
+  grid-column-start: auto;
+  grid-column-end: auto;
+  height: 10vh;
+}
+.filter06{
+  grid-column-start: auto;
+  grid-column-end: auto;
+  height: 10vh;
+}
+.filter07{
+  grid-column-start: auto;
+  grid-column-end: auto;
+  height: 10vh;
+}
+.filter08{
+  grid-column-start: auto;
+  grid-column-end: auto;
+  height: 10vh;
+}
+
+.filter09{
+  grid-column-start: auto;
+  grid-column-end: auto;
+  height: 10vh; 
+
+}}
+
