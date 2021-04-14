@@ -1,10 +1,22 @@
 :root{
 --gap: 2em; 
 --gap2: 1em;
---boxwidth: calc(100vw - var(--gap2));
---boxheight:calc(100vh - var(--gap2));
+--boxwidth: 100vw;
+--boxheight:100vh;
+--color1:#f4f3ee;
+--color4:#353535;
+--middlewidth:50vw;
+--middleheight:50vh;}
+
+body{
+  background-color: var(--color1);
 }
+
 @font-face {
+  font-family: 'Gelasio';
+  src: url(../fonts/Gelasio-Regular.ttf) format("truetype");
+  font-weight: 200;
+  
   font-family: 'Decovar';
   src: url(../fonts/DecovarAlpha-VF.ttf) format("truetype");
   font-weight: 200;
@@ -16,9 +28,13 @@
   position: absolute;
   z-index: 2;
   right: 2em;
-  top: 2em;
-
+  top: 2em
 }
+.content-header img
+{
+ width: 3vw;
+}
+
 h1{
   font-family: 'Decovar';
   font-variation-settings: 'WMX2' 500;
@@ -32,6 +48,7 @@ h1{
 
 .item{
  display:block;
+ height: var(--boxheight);
  -webkit-transition:all .5s linear;
  -moz-transition:all .5s linear;
  -o-transition:all .5s linear;
@@ -39,8 +56,187 @@ h1{
  transition:all .5s linear;
  text-align: center;
  font-size: 20px;
+
+}
+.grid-wrapper .item{
+  overflow: hidden;
 }
 
-.grid-wrapper img{
-    max-height:  500px;
+.grid-wrapper .item h1{
+ font-family: 'Gelasio';
+ font-size: 30px;
+ margin-top: 5vh;
 }
+.grid-wrapper .item p{
+ font-family: 'Gelasio';
+ font-size: 0.9em;
+ margin: 2vw 4vh;
+ line-height: 1.5em;
+}
+
+.grid-wrapper .item h1 span{
+ font-family: 'Decovar';
+ font-variation-settings: 'WMX2' 500;
+ font-size: 30px;
+ line-height: 3em;
+}
+
+.content-abc {
+  width: var(--middlewidth);
+  height: var(--boxheight);
+  float: right;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.content-abc p span{
+  font-family: 'Gelasio';
+  font-size: var(--font-content);
+}
+
+.content-abc:hover span{
+  font-family: 'Decovar';
+  font-variation-settings: "TRMD" 1000, "WMX2" 500;
+  color: var(--color4);
+  text-transform: uppercase;
+}
+
+.hovicon {
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+    color: var(--color3);
+}
+
+.hovicon:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content:'';
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.hovicon {
+    background: var(--color3);
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+}
+.hovicon:after {
+    top: -7px;
+    left: -7px;
+    padding: 7px;
+    box-shadow: 0 0 0 1px var(--color4);
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -webkit-transform: scale(.8);
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transition: transform 0.2s, opacity 0.2s;
+    transform: scale(.8);
+    opacity: 0;
+}
+.hovicon:after {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.hovicon:hover:after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.image {
+    float: left;
+    height: var(--boxheight);
+    width: var(--middlewidth);
+    position: relative; 
+    object-fit: cover;
+    object-position: right top;
+}
+
+.image:hover {
+    object-position: left top;
+    transition:all .3s linear;
+}
+
+.image img {
+    height: var(--boxheight);
+    width: var(--boxwidth);
+    object-fit: cover;
+}
+
+@media (max-width: 600px){
+.image {
+    height: var(--middleheight);
+    width: var(--boxwidth);
+    object-fit: cover;
+}
+.content-abc {
+    width: var(--boxwidth);
+    height: var(--middleheight);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.content-presentation {
+    margin-bottom: 0em;
+}
+
+.content-presentation h1 {
+    font-family: 'Decovar';
+    font-variation-settings: 'BLDA' 1000,'TRMD' 1000;
+    font-size: 1em;
+    margin: 15vw 0px 10vw;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.presentation {
+    text-align: center;
+    margin: auto;
+    line-height: 2em;
+    width: 85vw;
+}
+.content-presentation h1:hover{
+  font-family: 'Decovar';
+  font-variation-settings: 'BLDA' 0,'TRMD' 1000;
+  font-size: 1em;
+  margin: 15vw 0px 10vw;
+  letter-spacing: 5px;
+  transition: all .3s ease-in;
+}
+div[class*=box] {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0em; 
+}
+.btn-one:active span {
+  letter-spacing: 2px;
+}
+.btn-one:active::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+.btn-one::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+}
+.btn-one:active::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
+}}

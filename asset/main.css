@@ -1,200 +1,276 @@
+:root{
+--color1:#f4f3ee;
+--color2: #000; 
+--color3: #a5a58d; 
+--color4:#353535;
+--boxwidth: 100vw;
+--boxheight:100vh;
+--middlewidth:50vw;
+--middleheight:50vh;
+--font-title:1.5em;
+--font-first-title:3em;
+--font-content:1em;}
+
 @font-face {
   font-family: 'Decovar';
   src: url(../fonts/DecovarAlpha-VF.ttf) format("truetype");
   font-weight: 200;
+
+  font-family: 'Gelasio';
+  src: url(../fonts/Gelasio-Regular.ttf) format("truetype");
+  font-weight: 200;
 }
-.home {
-	scroll-behavior: smooth;
-	overflow: scroll;
-	overscroll-behavior-y: contain;
+body{
+  background-color: var(--color1);
 }
 
-.presentation{
-  text-align: center;
-  margin: 5vw 10vw;
-  line-height: 2em;
+.home-illu {
+ display: block;
+ text-decoration: none;
+ color: var(--color4);
+ font-family: 'Decovar';
+ font-variation-settings: 'TRMD' 1000;
 }
-#item1 h1{
+
+.content-presentation {
+  margin-bottom: 2em;
+}
+
+.content-presentation h1{
   font-family: 'Decovar';
-  font-variation-settings: 'BLDA' 1000;
-  font-size: 1.5em;
+  font-variation-settings: 'BLDA' 1000,'TRMD' 1000;
+  font-size: var(--font-title);
   margin: 100px 0px;
+  color: var(--color3);
+  text-align: center;
 }
 
-#item1 h1:hover{
+.content-presentation h1:hover{
   font-family: 'Decovar';
-  font-variation-settings: 'BLDA' 0;
-  font-size: 1.5em;
+ font-variation-settings: 'BLDA' 0,'TRMD' 1000;
+  font-size: var(--font-title);
   margin: 100px 0px;
   letter-spacing: 10px;
   transition: all .3s ease-in;
 }
 
-#item1 span{
+.content-presentation span{
   font-family: 'Decovar';
-  font-variation-settings: 'WMX2' 300;
-  font-size: 2.5em;
+  font-variation-settings: 'TRMD' 1000;
+  font-size: var(--font-first-title);
+  color: var(--color4);
 }
 
-#grid{
-  display: grid;
-  transition: transform 0.8s ease-in-out;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
+
+.presentation{
+  text-align: center;
+  margin: auto;
+  line-height: 2em;
+  width: 60vw;
+  font-family: 'Gelasio';
+  font-size: var(--font-content);
+  color: var(--color4);
+}
+
+.presentation span{
+  font-family: 'Gelasio';
+  font-size: var(--font-content);
+}
+
+.presentation:hover span{
+  font-family: 'Decovar';
+  font-variation-settings: 'BLDA' 1000;
+  color: var(--color4);
+}
+
+.box-1 {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4em;
+}
+.box-1 a{
+    text-decoration: none;
+}
+
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+}
+
+.btn-one {
+  color: var(--color3);
+  transition: all 0.3s;
+  position: relative;
+}
+.btn-one span {
+  transition: all 0.3s;
+}
+.btn-one::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: var(--color3);
+  border-bottom-color: var(--color3);
+  transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  letter-spacing: 2px;
+}
+.btn-one:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+.btn-one::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+}
+.btn-one:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
+}
+
+.content-presentation svg {
+  width: 2vw;
+  height: 2.8vh;
+}
+.content-presentation:hover svg{
+  fill: var(--color3);
+  margin-right: 1em;
+}
+
+#home svg {
+  position: absolute;
+  width: 213px;
+  bottom: 0vw;
+  right: 0em;
+}
+
+.footprint{
+    width: 5vw;
+    animation: footPrint 5s; 
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    position: absolute;
+    transition: ease-in;
+    bottom: 5vh;
+ }
+.footprint--1{
+      right: 25vw;
+      animation-delay: 1s;}
+
+.footprint--2{
+      right: 20vw;
+      animation-delay: 2s;}
+
+.footprint-second{
+    width: 5vw;
+    animation: footPrint 5s; 
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    position: absolute;
+    transition: linear;
+    top: 20vh;}
+
+.footprint--3{
+      left: 7vw;
+      animation-delay: 3s;
+      opacity :0;}
+
+.footprint--4{
+      left: 5vw;
+      animation-delay: 4s;
+      opacity :0;}
+
+.footprint-three{
+    width: 7vw;
+    animation: footPrintdown 5s; 
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    position: absolute;
+    transition: ease-out;
+    top: 0vh;
+ }
+
+.footprint--5{
+      top: 15vh;
+      left: 55vw;
+      top: 5vh;
+      left: 45vw;
+      animation-delay: 5s;
+      opacity :0;}
+.footprint--6{
+     top: 5vh;
+      left: 45vw;
+      animation-delay: 6s;
+      opacity :0;}
+
+
+.footprint-four{
+    width: 7vw;
+    animation: footPrint 5s; 
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    position: absolute;
+    transition: ease-out;
+    bottom: 0vh;
+ }
+
+.footprint--7{
+      bottom: 5vh;
+      left: 5vw;
+      bottom: 0vh;
+      left: 0vw;
+      animation-delay: 7s;
+      opacity :0;}
+.footprint--8 {
+     bottom: : 0vh;
+      left: 0vw;
+      animation-delay: 8s;
+      opacity :0;}
+
+
+ @keyframes footPrint{
+  0%{opacity: 0}
+  10%{opacity: 1;transform: translateX(50px) translateY(-50px);}
+  25%{opacity: 0;transform: translateX(100px) translateY(-100px);}
+  50%{opacity: 1;transform: translateX(200px) translateY(-120px);}
+  75%{opacity: 0;transform: translateX(300px) translateY(-140px);}
+  90%{opacity: 1;transform: translateX(400px) translateY(-160px);}
+  99%{opacity: 1;transform: translateX(500px) translateY(-180px);}
+  100%{opacity: 0;transform: translateX(500px) translateY(-180px);}
+*}
+ 
+ @keyframes footPrintdown{
+  0%{opacity: 1}
+  10%{opacity: 0;transform: translateX(50px) translateY(50px);}
+  25%{opacity: 1;transform: translateX(100px) translateY(100px);}
+  50%{opacity: 0;transform: translateX(200px) translateY(120px);}
+  75%{opacity: 1;transform: translateX(300px) translateY(140px);}
+  90%{opacity: 0;transform: translateX(400px) translateY(160px);}
+  100%{opacity: 0;transform: translateX(500px) translateY(-180px);}
+*}
+
   
-}
 
-#grid a{
-  text-decoration:none;
-  text-align:center;
-  padding:5px 0;
-  color:white;
-  font-family: 'Decovar';
-}
-
-.filter {
-  text-decoration:none;
-  text-align:center;
-  padding:5px 0;
-  color:white;
-  font-size: 1.5em;
-  background:black;  
-  font-variation-settings: 'TRMD' 1000;
-
-}
-
-.filter a{
-  text-decoration:none;
-  text-align:center;
-  padding:5px 0;
-  color:white;
-  font-variation-settings: 'TRMD' 1000;
-}
-
-
-.box-filter{
- display:block;
- height:25vh;
- font-size: 3em;
- -webkit-transition:all .5s linear;
- -moz-transition:all .5s linear;
- -o-transition:all .5s linear;
- -ms-transition:all .5s linear;
- transition:all .5s linear;
- margin-top:20px;
- text-align: center;
-  font-variation-settings: 'BLDA' 1000;
-}
-
-.box-filter a{
-  text-decoration:none;
-  font-size: 3em;
-  text-align:center;
-  padding:5px 0;
-  color:white;
-  font-variation-settings: 'BLDA' 1000;
-}
-
-.box-filter:hover {
-  text-decoration:none;
-  text-align:center;
-  padding:5px 0;
-  color:white;
-  font-variation-settings: 'BLDA' 0;
-}
-
-.box-filter p{
- display:none;
-}
-
-.box-filter:hover p{
- display:contents;
-}
-
-a:focus[data-filter]{
-    opacity:.8;
-    outline:none;
-}
-
-
-
-div[data-filter="oiseaux"]{
-  background:#ccc0a9;
-  color:white;
-  text-transform: uppercase;
-}
-
-div[data-filter="rongeur"]{
-  background:#d5c2a0;
-  color:white;
-  text-transform: uppercase;
-}
-
-div[data-filter="feliformes"]{
-  background:#e1c694;
-  color:white;
-  text-transform: uppercase;
-}
-
-div[data-filter="bovides"]{
-  background:#e6c78f;
-  color:white;
-  text-transform: uppercase;
-}
-
-div[data-filter="all"]{
-  background:#e6c78f;
-  color:white;
-  text-transform: uppercase;
-}
-
-div[data-filter="mamifere"]{
-  background:#edc988;
-  color:white;
-  text-transform: uppercase;
-}
-
-a[data-filter="rongeur"]:focus ~ div:not([data-filter="rongeur"]){
-  width:0;
-  height:0;
-  padding:0;
-  margin:0;
-  opacity:0;
-
-}
-
-
-a[data-filter="feliformes"]:focus ~ div:not([data-filter="feliformes"]){
-  width:0;
-  height:0;
-  padding:0;
-  margin:0;
-  opacity:0;
-
-}
-
-a[data-filter="bovides"]:focus ~ div:not([data-filter="bovides"]){
-  width:0;
-  height:0;
-  padding:0;
-  margin:0;
-  opacity:0;
-
-}
-
-a[data-filter="oiseaux"]:focus ~ div:not([data-filter="oiseaux"]){
-  width:0;
-  height:0;
-  padding:0;
-  margin:0;
-  opacity:0;
-
-}
-a[data-filter="mamifere"]:focus ~ div:not([data-filter="mamifere"]){
-  width:0;
-  height:0;
-  padding:0;
-  margin:0;
-  opacity:0;
-
-}
+  

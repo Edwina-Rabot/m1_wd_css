@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(6, var(--boxwidth));
   grid-template-rows: repeat(5,var(--boxheight));
-  grid-gap: 0.5em;
   position: fixed;
   width: calc(6 * var(--boxwidth));
   height: calc(5 * var(--boxheight));
