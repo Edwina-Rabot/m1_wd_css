@@ -125,8 +125,9 @@ body{
   display: block; 
 }
 
-.text1 {
+.container h1 {
   font-family: 'Decovar';
+  font-variation-settings:'TRMD' 1000;
   color: var(--color4);
   font-size: 60px;
   font-weight: 700;
@@ -139,7 +140,7 @@ body{
   animation-iteration-count: 1;
 }
 
-.text2 {
+.container h2 {
   font-family: 'Decovar';
  font-size: 25px;
   color:var(--color3) ;
