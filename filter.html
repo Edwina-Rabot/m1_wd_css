@@ -3,30 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>filtre</title>
-    <link rel="stylesheet" href="asset/main.css">
-  <link rel="stylesheet" href="asset/reset.css">
+    <link rel="stylesheet" href="asset/reset.css">
     <link rel="stylesheet" href="asset/styles.css">
+    <link rel="stylesheet" href="asset/main.css">
     <link rel="stylesheet" href="asset/filter.css">
     <link rel="stylesheet" href="asset/layouts.css">
     <link rel="stylesheet" href="asset/ui-mechanims.css">
   </head>  
 
   <header>
-    <div class="content-header">
-      <a class="home-illu" href="index.html">
-        <img alt="image-retour-home" src="img/home.png">
-        <p>Home</p>
-      </a>
-    </div>
-  </header>
-  
-  <body>
+      <div class="content-header">
+        <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+        <p>abecedaire</p>
+        <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+      <nav id="main-menu" class="main-menu">
+        <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+        <ul>
+          <li><a href="filter.html">Les animaux</a></li>
+          <li><a href="index.html">L'expérience</a></li>
+          <li><a href="#">A propos</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+        <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+        </a>
+      </div>
+    </header>
+    
+  <body class="scroll">
     <div class="content-presentation">
-        <h1><span>LES ANIMAUX <br></span> a <svg><use xlink:href="#arrow"/></svg>z </h1>
+        <h1><span>LES ANIMAUX <br></span><p>a <svg><use xlink:href="#empreinte"/></svg><svg><use xlink:href="#empreinte"/></svg><svg><use xlink:href="#empreinte"/></svg>z</p></h1>
     </div>
     <svg display="none">
-      <symbol width="24" height="24" viewBox="0 0 24 24" id="arrow">
-      <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+      <symbol width="24" height="24" viewBox="0 0 24 24" id="empreinte">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138.82 168.6" class="footprint footprint--1"><g id="Calque_2" data-name="Calque 2"><g id="droite" class="footprint--1"><path d="M41.08,4.08A6,6,0,0,0,33.86.2c-2.08.56-4.68,2-7.61,5.24-4.45,4.9-4.81,9.16-4.3,11.9a7.15,7.15,0,0,0,4.47,5.53c2.46.86,6.22.62,10.93-4.56C42.62,12.51,42.21,7.29,41.08,4.08Z"/><path d="M80,55.15a6,6,0,0,1,1.84,8c-1.09,1.86-3.17,4-7.06,6-5.91,3-10.1,2.23-12.62,1A7.16,7.16,0,0,1,58,64.33c-.18-2.6,1-6.16,7.28-9.34C72.31,51.43,77.24,53.2,80,55.15Z"/><path d="M3,31.51S8.82,24,27.89,29.33a9,9,0,0,0,4.44.11C38.58,28,56.17,25,58.26,35.67c1.73,8.83-1.67,16.23-4,20.08a14.53,14.53,0,0,0-2.16,6.67C51.55,70.35,49.19,87.7,38.42,86,28.08,84.41,24.25,74.21,22.76,68.8a17.77,17.77,0,0,0-2.61-5.68l-1.68-2.6C17.13,58.38,17,58,15.3,56.94,10.3,53.74.22,47.1,0,40.91-.26,32.58,3,31.51,3,31.51Z"/><path d="M85.74,25a6,6,0,0,1,3.45,7.43c-.67,2-2.26,4.55-5.66,7.3C78.38,43.85,74.12,44,71.41,43.3a7.14,7.14,0,0,1-5.27-4.78c-.72-2.5-.26-6.24,5.17-10.64C77.41,22.94,82.6,23.64,85.74,25Z"/><path d="M71.22,6.38a6,6,0,0,0-6.39-5.12c-2.15.16-5,1.11-8.44,3.76C51.12,9,50,13.14,50,15.94a7.12,7.12,0,0,0,3.39,6.24c2.26,1.3,6,1.75,11.57-2.48C71.21,15,71.76,9.74,71.22,6.38Z"/>
+      </g></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138.82 168.6"  class="footprint footprint--2"><g id="gauche" class="footprint--2"><path d="M125.38,145a6,6,0,0,1,.44,8.18c-1.39,1.65-3.8,3.38-8,4.66-6.33,2-10.33.46-12.6-1.17a7.11,7.11,0,0,1-3.09-6.4c.26-2.59,2.07-5.88,8.76-7.94C118.41,140,123,142.59,125.38,145Z"/><path d="M95.72,88A6,6,0,0,0,89.27,83c-2.14.19-5,1.18-8.39,3.86-5.23,4.07-6.31,8.2-6.28,11A7.15,7.15,0,0,0,78.06,104c2.27,1.27,6,1.68,11.54-2.62C95.8,96.58,96.29,91.37,95.72,88Z"/><path d="M84.35,167.81s9.25-2.12,12.57-21.63a9.1,9.1,0,0,1,1.78-4.07c4-5.05,14.16-19.69,5.39-26.12-7.25-5.32-15.4-5.38-19.89-4.87a14.61,14.61,0,0,1-7-.89c-7.39-2.9-24.1-8.15-27.16,2.31-2.94,10,4.67,17.86,8.93,21.5a17.7,17.7,0,0,1,4,4.78l1.64,2.63c1.37,2.11,1.64,2.39,1.9,4.38.76,5.89,2.49,17.84,8,20.66C82,170.27,84.35,167.81,84.35,167.81Z"/><path d="M125.47,95.68a6,6,0,0,0-5.25-6.29c-2.14-.26-5.09.12-9,2-6,2.89-7.88,6.7-8.43,9.44a7.16,7.16,0,0,0,2.09,6.8c2,1.72,5.54,2.89,11.84-.16C123.76,104.08,125.32,99.08,125.47,95.68Z"/><path d="M136.11,116.71a6,6,0,0,1,1.93,8c-1.07,1.88-3.12,4-7,6-5.87,3.07-10.07,2.34-12.6,1.15a7.12,7.12,0,0,1-4.21-5.73c-.22-2.59,1-6.16,7.17-9.41C128.35,113.08,133.3,114.8,136.11,116.71Z"> 
+      <animateMotion xlink:href="#footprint" dur="20s"   begin="0s" repeatCount="indefinite" path="M59.6,418.9c0,0,340.4-758.3,680.7,0"/></g></svg>
       </symbol>
     </svg>
 

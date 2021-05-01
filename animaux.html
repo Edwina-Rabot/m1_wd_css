@@ -6,20 +6,22 @@
     <link rel="stylesheet" href="asset/reset.css">
     <link rel="stylesheet" href="asset/styles.css">
     <link rel="stylesheet" href="asset/layouts.css">
+    <link rel="stylesheet" href="asset/main.css">
     <link rel="stylesheet" href="asset/ui-mechanims.css">
   </head>  
   
   <header>
-    <div class="content-header">
-      <a class="home-illu" href="index.html">
-        <img alt="image-retour-home" src="img/home.png">
-        <p>Home</p>
-      </a>
-    </div>
-  </header>
+
+ <header>
 
   <body>
 
+    <svg  display="none"> 
+      <symbol width="24" height="24" viewBox="0 0 24 24" id="arrow">
+      <path d="M0 0h24v24H0z" fill="none"/><path d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"/>
+      </symbol>
+    </svg>
+    
     <div class="wrapper">
       <div class="proxy-anchor" id="p1" tabindex="0"> Lettre a </div>
       <div class="proxy-anchor" id="p2" tabindex="0"> Lettre b </div>
@@ -53,17 +55,65 @@
       
       <div class="item" id="item2">
         <div class="content-abc">
-          <h1><span>Agouti<br></span>ou Dasyprocta</h1>
-            <p>Les agoutis forment un genre de <span>rongeurs</span> qui regroupe des mammifères terrestres d'Amérique tropicale, de taille moyenne. Il ne faut pas confondre ces agoutis avec l'ancien genre Agouti qui regroupe les pacas, ni avec le grand aulacode (Thryonomys swinderianus), appelé agouti en Afrique de l'Ouest.
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>
+            <h1><span>Agouti<br></span>ou Dasyprocta</h1>
+            <div class="texte">
+            <div class="p-content"><p>Les agoutis forment un genre de <span>rongeurs</span> qui regroupe des mammifères terrestres d'Amérique tropicale, de taille moyenne. Il ne faut pas confondre ces agoutis avec l'ancien genre Agouti qui regroupe les pacas, ni avec le grand aulacode (Thryonomys swinderianus), appelé agouti en Afrique de l'Ouest.
             Le genre Dasyprocta a été décrit pour la première fois en 1811 par le zoologiste allemand Johann Karl Wilhelm Illiger (1775-1813).</p>
             <p>Agouti, en génétique mendélienne, caractérise la <span>couleur du pelage</span> des mammifères par référence à l'agouti, qui possède une robe brun chiné.</p>
+            <p>Ce petit rongeur proche du cochon d’inde peut peser de 2 à 3 kg. Ses grandes pattes lui permettent de courir rapidement. Il fut utilisé par les indigènes mayas comme animal domestique, mais aussi pour sa chair.</p>
+            <p>Habitat : Il occupe les forêts des régions humides situées entre le Sud du Mexique, le Paraguay et le Brésil, ainsi qu’aux Antilles.</p>
+
+            <p>>Mœurs : Il vit dans des terriers et est plutôt diurne. S’il se sent menacé, il peut changer ses habitudes. Il peut vivre seul ou en couple.</p>
+            <p>Alimentation : Il mange des graines, des fruits et des feuilles.</p>
+
+            <P>Il exerce un rôle essentiel dans la forêt : En cachant un grand nombre de graines ou fruits tombés au sol qu’il conserve pour sa consommation future, il permet la dispersion des graines et donc la reproduction des arbres. D’instinct, il les décortique avant de les enterrer. Certaines graines (notamment celles de l’astrocaryum noir) ne germent que lorsqu’elles ont été traitées de la sorte.</p>
+            <p>Quand on parle de l’importance de la biodiversité, en voilà un exemple probant !</p>
+            </div>
+            </div>
+            <div class="link">
+               <a class="link-animals" href="animaux.html#p1"><img src="illu/fleche-droite.svg"><span>b</span></a>
+            </div>
          </div> 
         <img class="image" src="img/agouti.jpg">
+         <svg><use xlink:href="#arrow"/></svg>
       </div>
       
       <div class="item" id="item3">
-          <div class="content-abc">
+        <div class="content-abc">
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>
             <h1><span>Bongo<br></span>(Tragelaphus eurycerus)</h1>
+            <div class="texte">
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
               <p>Le bongo est une espèce de mammifères ruminants de la famille des <span>Bovidés</span> vivant en Afrique centrale. C’est une grande antilope des forêts tropicales. L'Union internationale pour la conservation de la nature le classe comme <span>quasi-menacé</span>.</p>
               <p>La femelle pèse entre 210 et 235 kg, le mâle a un poids compris 240 et 405 kg. Les deux sexes possèdent des cornes en spirale qui mesurent entre 75 et 99 cm.
 
@@ -77,26 +127,79 @@
 
               <p>Depuis 2008, son statut est <span>quasi-menacé</span> (NT) du fait de la déforestation de son habitat et parce qu'il est chassé par les locaux pour sa viande.</p>
 
-              <p>Il existe un Programme européen pour les espèces menacées (EEP) de l'Association européenne des zoos et aquariums (EAZA) consacré à la sous-espèce la plus menacée, Tragelaphus eurycerus isaaci. Celui-ci est coordonné par le Zoo de Chester, en Angleterre.</p>
-          </div>  
+              <p>Il existe un Programme européen pour les espèces menacées (EEP) de l'Association européenne des zoos et aquariums (EAZA) consacré à la sous-espèce la plus menacée, Tragelaphus eurycerus isaaci. Celui-ci est coordonné par le Zoo de Chester, en Angleterre.</p> 
+              </div>
+              <div class="flechebas"><img src="illu/flechebas.svg"></div>
+              </div>
+              <div class="link">
+                <a class="link-animals" href="animaux.html#p0"><img src="illu/fleche-gauche.svg"><span>A</span></a>
+                <a class="link-animals" href="animaux.html#p2"><img src="illu/fleche-droite.svg"><span>C</span></a>
+              </div>
+          </div> 
+
         <img class="image" src="img/bongo.jpg">
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
       
       <div class="item" id="item4">
-          <div class="content-abc">
+        <div class="content-abc">
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>            
             <h1><span>Cacatoes</span><br>à huppe jaune</h1>
+            <div class="texte">
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
               <p>Le Cacatoès à huppe jaune (Cacatua galerita) est une espèce d'<span>oiseaux</span> de la famille des <span>Cacatuidae</span>. C'est l'un des <span>plus grands</span> et des plus répandus cacatoès australiens. Il est fréquemment recherché comme animal de compagnie en et hors d'Australie. Mais, en liberté, il est souvent abattu et empoisonné car considéré comme nuisible. En effet, en bandes ou solitaire, il peut s'attaquer aux récoltes de céréales et de fruits, ainsi qu'au bois des arbres, des abris de jardins ou des maisons. Toutefois il faut, pour les détruire, une autorisation du gouvernement australien car ce sont des animaux protégés.</p>
               <p>C'est un animal mesurant de 45 à 50 cm de longueur et pesant de 800 à 900 g. Son plumage est blanc, avec une grande huppe érectile orientée vers l'arrière au repos, d'un jaune soutenu. Le dessous des ailes et de la queue est jaune clair. Il a un bec d'un gris très foncé, presque noir. Les deux sexes sont semblables quoique la femelle soit plus petite et que les yeux ne soient pas tout à fait de la même couleur : d'un brun tirant sur le rouge chez la femelle, sur le noir chez le mâle. C'est un animal bruyant aussi bien en vol, le matin et le soir lorsqu'il va se nourrir, qu'au repos.</p>
               <p>C'est un animal que l'on trouve surtout en Australie : sur la partie Nord et Est du continent et en Tasmanie ainsi qu'en Nouvelle-Guinée et dans les îles Aru.
               Animaux de compagnie, un certain nombre d'entre eux se sont échappés et ont créé des colonies accidentelles autour de Perth, en Australie-Occidentale, en Nouvelle-Zélande et en Indonésie.
               Ce sont des oiseaux sédentaires vivant en grandes bandes en dehors de la période de reproduction dans toutes les régions boisées et surtout au voisinage de l'homme.</p>
+              </div>
+              <div class="flechebas"><img src="illu/flechebas.svg"></div>
+              </div>              
+              <div class="link">
+                <a class="link-animals" href="animaux.html#p1"><img src="illu/fleche-gauche.svg"><span>B</span></a>
+                <a class="link-animals" href="animaux.html#p3"><img src="illu/fleche-droite.svg"><span>D</span></a>
+              </div>
           </div>
         <img class="image" src="img/cacatoes.png">
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
       
       <div class="item" id="item5">
         <div class="content-abc">
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>          
           <h1><span>Dhole<br></span>Cuon d'Asie, « Chien sauvage d'Asie »</h1>
+            <div class="texte">
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
             <p>Le Dhole, est une espèce de mammifères de la famille des canidés et du genre <span>Cuon</span>, dont il est le <span>seul représentant</span> actuel. Il vit en Asie.
             Le Dhole s'apparente au Loup ou au Lycaon. Sa robe est d'une couleur brun-roux. Il vit principalement en Asie centrale et orientale mais s'adapte facilement à de nouveaux environnements.</p>
 
@@ -113,13 +216,39 @@
             <p>Aujourd'hui, en 2021, le Dhole n'est présent de manière attestée qu'au Bangladesh, au Bhoutan, au Cambodge, en Chine, en Inde, en Indonésie, en Malaisie, en Birmanie, au Népal, en Thaïlande et au Laos5. Il l'était également en Europe jusqu'au début du Paléolithique supérieur, où il a succédé à une autre espèce éteinte, Cuon priscus, sans nécessairement descendre de celle-ci.</p>
 
             <p>L'espèce est classée comme espèce <span>en danger</span> par l'Union internationale pour la conservation de la nature (UICN) car ses populations sont en diminution et estimées à moins de 2 500 adultes. Les facteurs contribuant à ce déclin sont la déficience de l'habitat, la raréfaction des proies comestibles due à la concurrence avec d'autres espèces, l'extinction progressive provoquée par la prédation d'autres variétés animales et le transfert de maladies par les chiens domestiques.</p>
+            </div>
+              <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            </div> 
+            <div class="link">
+                <a class="link-animals" href="animaux.html#p2"><img src="illu/fleche-gauche.svg"><span>C</span></a>
+                <a class="link-animals" href="animaux.html#p4"><img src="illu/fleche-droite.svg"><span>E</span></a>
+            </div>
         </div>  
           <img class="image" src="img/dhole.jpg">
+          <svg><use xlink:href="#arrow"/></svg>
       </div>
       
       <div class="item" id="item6">
         <div class="content-abc">
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>          
           <h1><span>Elaphode<br></span>Elaphodus cephalophus, cerf huppé</h1>
+            <div class="texte">
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
             <p>Élaphode est une espèce de cervidés, la <span>seule</span> du genre <span>Elaphodus</span>.</p>
             <p>L'élaphode mesure autour de 60 cm au garrot et pèse entre 17 kg et 30 kg, c'est l'un des plus petits cervidés.</p>
 
@@ -127,14 +256,41 @@
             <p>Il est l'un des rares cervidés omnivores, comme le chevrotain aquatique: il se nourrit d'herbes, de feuilles, de coquilles d'œufs et de larves. Il a de nombreux prédateurs, tels que le tigre du Bengale, la panthère de Chine, le python réticulé ou d'autre pythons asiatiques. Les rapaces sont dangereux pour les petits. L'élaphode pousse des sortes d'aboiements quand il se sent menacé. Son statut de conservation est <span>quasi menacé</span>.</p>
 
             <p>Le cerf huppé est une espèce <span>polygame</span>. Les cerfs huppés se reproduisent durant une période de septembre à décembre appelé ornière, A cette période, les aboiements des mâles sont beaucoup plus fréquents et puissants afin d'attirer les femelles. La période de gestation des cerfs huppés est d'environ 210 jours, la femelle peut alors donner naissance de un à deux petits. Jusqu'à l'âge de 6 mois, les petits sont dépendants de leur mère. Il atteindra sa maturité sexuelle vers l'âge de 9 mois. La longévité du cerf huppé est méconnu jusque lors. Néanmoins, il peut vivre jusqu'à 15 ans en captivité.</p>
+            </div>
+              <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            </div> 
+
+            <div class="link">
+                <a class="link-animals" href="animaux.html#p3"><img src="illu/fleche-gauche.svg"><span>D</span></a>
+                <a class="link-animals" href="animaux.html#p5"><img src="illu/fleche-droite.svg"><span>F</span></a>
+            </div>
         </div>
         <img class="image" src="img/elaphode.jpg">      
+         <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item7">
-        <div class="content-abc">        
+        <div class="content-abc">  
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>      
           <h1><span>Fossa<br></span>Cryptoprocta ferox</h1>
-            <p>Le fossa aussi appelé cryptoprocte féroce et <span>unique</span> représentant actuel du genre <span>Cryptoprocta</span>, est une espèce de mammifères féliformes de la famille des Eupleridae, endémique de Madagascar. Il est le plus gros mammifère carnivore de l'île et est parfois comparé à un <span>petit puma</span>. Les adultes mesurent 70 à 80 cm de long du museau à la base de la queue, et pèsent de 5,5 à 8,6 kg, les mâles étant plus lourds que les femelles. Ses griffes semi-rétractiles permettent au fossa de grimper et de descendre des arbres la tête en avant, et l'animal peut aussi sauter d'arbre en arbre. Le fossa est un représentant très particulier dans sa famille, ses organes génitaux partageant certains caractères avec les félins et les hyènes.</p>
+            <div class="texte">
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
+            <p>Le fossa aussi appelé cryptoprocte féroce et <span>unique</span>représentant actuel du genre <span>Cryptoprocta</span>, est une espèce de mammifères féliformes de la famille des Eupleridae, endémique de Madagascar. Il est le plus gros mammifère carnivore de l'île et est parfois comparé à un <span>petit puma</span>. Les adultes mesurent 70 à 80 cm de long du museau à la base de la queue, et pèsent de 5,5 à 8,6 kg, les mâles étant plus lourds que les femelles. Ses griffes semi-rétractiles permettent au fossa de grimper et de descendre des arbres la tête en avant, et l'animal peut aussi sauter d'arbre en arbre. Le fossa est un représentant très particulier dans sa famille, ses organes génitaux partageant certains caractères avec les félins et les hyènes.</p>
 
             <p>Le fossa a une aire de répartition répandue sur Madagascar, mais les densités de peuplement sont généralement faibles. Il vit uniquement en habitat forestier, et chasse activement la nuit comme le jour. Plus de la moitié de son régime alimentaire se compose de lémuriens, les primates également endémiques de l'île ; les autres proies connues sont représentées par des tenrecs, des rongeurs, des lézards, des oiseaux et divers autres animaux. L'accouplement a habituellement lieu dans des arbres, sur des branches horizontales, et peut durer plusieurs heures. La portée compte un à six petits, qui naissent aveugles et sans dents. Les jeunes sont sevrés au bout de quatre mois et demi, et sont indépendants au bout d'un an. Ils atteignent la maturité sexuelle à l'âge de deux ans, et la longévité mesurée en captivité est de vingt ans.</p>
 
@@ -148,13 +304,40 @@
 
             <p>Bien que l'espèce soit largement répandue à Madagascar, elle est localement rare dans toutes les régions de l'île et ainsi particulièrement vulnérable face à l'extinction ; la fragmentation écopaysagère est un facteur aggravant le risque. Le fossa a une densité de population plus faible que l'on pourrait prédire à partir de la taille de l'animal, et est en outre menacé par la disparition rapide des forêts malgaches et le déclin des populations de lémuriens qui constituent une grande part de son alimentation. La disparition du fossa, localement ou totalement, pourrait grandement influer sur la dynamique des écosystèmes, conduisant éventuellement au surpâturage par certaines de ses proies. La population totale dans les aires protégées est estimée à moins de 2 500 adultes, mais ce chiffre est peut-être surestimé. Seules deux zones protégées contiendraient plus de 500 fossas adultes : le parc national de Masoala et le parc national de Midongy du sud, même si ces estimations pourraient également être surévaluées.</p>
             <p>Les informations recueillies sur les populations sont insuffisantes pour une analyse de viabilité des populations correcte, mais les estimations donnent à penser qu'aucune des aires protégées ne soutient une population viable. Si ce résultat est correct, il impliquerait un processus de déclin progressif des effectifs sur une centaine d'années, jusqu'à l'extinction de l'espèce. Pour que celle-ci survive, il est estimé qu'au moins 555 km2 sont nécessaires pour maintenir de petites populations viables sur le court terme, et au moins 2 000 km2 pour les populations de 500 adultes.</p>
+          </div>
+          <div class="flechebas"><img src="illu/flechebas.svg"></div>
+          </div>
+
+            <div class="link">
+                <a class="link-animals" href="animaux.html#p4"><img src="illu/fleche-gauche.svg"><span>E</span></a>
+                <a class="link-animals" href="animaux.html#p6"><img src="illu/fleche-droite.svg"><span>G</span></a>
+          </div>
         </div>  
         <img class="image" src="img/fossa.jpeg">      
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item8">
-        <div class="content-abc">        
+        <div class="content-abc">
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>                
           <h1><span>Guigna</span><br>Leopardus guigna</h1>
+            <div class="texte">
+              <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
             <p>Le Guigna, également appelé Chat du Chili et Kodkod, est un félin du genre <span>Leopardus</span>. Plus petit félin d'Amérique, le Guigna se caractérise par sa petite tête aux oreilles rondes, sa queue courte et touffue et ses pieds larges. Son pelage gris fauve à brun tacheté de noir est proche de celui du Chat de Geoffroy.</p>
             <p>Félin <span>territorial et solitaire</span>, le Guigna est fortement dépendant de la forêt : il n'a jamais été observé dans des habitats où la végétation s'élève à moins de quarante centimètres de haut. Les petits rongeurs et les lagomorphes forment l'essentiel du régime alimentaire. Il s'attaque ponctuellement aux oiseaux de basse-cour.</p>
             <p>L'aire de répartition couvre le centre et le nord du Chili ainsi qu'une petite zone de l'Argentine. Le Guigna est principalement menacé par la perte et la fragmentation de son habitat. Le braconnage est la seconde menace pesant sur l'espèce. Considéré comme <sapn>« Vulnérable »</sapn> par l'Union internationale pour la conservation de la nature, le Guigna est protégé sur l'ensemble de son aire de répartition.
@@ -172,13 +355,39 @@
             <p>Le Guigna est classé <span>« vulnérable » </span>selon la liste rouge des espèces menacées de l'Union internationale pour la conservation de la nature (UICN). Le Guigna est un animal protégé au Chili et en Argentine. Selon le Reglamento de Clasificación de Especies du ministère de l'Environnement chilien, l'espèce est classée comme vulnérable (VU) du nord du pays jusqu'à la région des Fleuves et quasi-menacée (NT) de la région des Lacs jusqu’au sud du pays.
             Dans le cadre de la convention de Washington, le Guigna est classé en Annexe II de la CITES depuis 1977, ce qui signifie que le commerce international de cette espèce est étroitement contrôlé. En 2006, l'Argentine a interdit l'exportation des spécimens vivants.</p>
             <p>Le Guigna étant en certains points du Chili le plus gros prédateur, il peut être considéré comme un bon candidat pour être une espèce porte-drapeau et clé de voûte</p>
+          </div>
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+          </div>
+          <div class="link">
+                <a class="link-animals" href="animaux.html#p5"><img src="illu/fleche-gauche.svg"><span>F</span></a>
+                <a class="link-animals" href="animaux.html#p7"><img src="illu/fleche-droite.svg"><span>H</span></a>
+          </div>
         </div>  
         <img class="image" src="img/guigna.jpg">      
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item9">
         <div class="content-abc">                
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>
           <h1><span>Huppe fasciee</span><br>Upupa epops</h1>
+            <div class="texte">
+              <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
             <p>La Huppe fasciée est une espèce d'<span>oiseau</span>, l'une des trois représentantes de la famille des Upupidae et du genre Upupa. Les deux autres espèces, la Huppe africaine Upupa africana et la Huppe de Madagascar Upupa marginata, ont longtemps été considérées comme des sous-espèces de la Huppe fasciée. Ces espèces sont parfois placées par certains auteurs dans leur propre ordre, les Upupiformes.</p>
             <p>Cet oiseau mesure de 26 à 32 cm de longueur (bec : de 5 à 6 cm) pour une envergure d'environ 45 cm et une masse de 60 à 80 g.
 
@@ -203,13 +412,39 @@
             <p>De plus, la huppe est <span>protégée</span> par la loi dans la plupart des pays européens. Elle n'est pas recherchée par les chasseurs, même si certains en tuent parfois (illégalement) dans certains pays, comme à Malte.</p>
 
             <p>Par contre, elle est plus souvent capturée en Afrique du Nord, où certaines parties de son corps sont utilisées pour des pratiques médicales et « magiques ».</p>
+          </div>
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+          </div> 
+          <div class="link">
+                <a class="link-animals" href="animaux.html#p6"><img src="illu/fleche-gauche.svg"><span>G</span></a>
+                <a class="link-animals" href="animaux.html#p8"><img src="illu/fleche-droite.svg"><span>I</span></a>
+          </div>
         </div>
         <img class="image" src="img/huppefasciee.jpg">      
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item10">
         <div class="content-abc">                
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>
           <h1><span>Ibis rouge</span><br>Eudocimus ruber</h1>
+            <div class="texte">
+              <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
             <p>L'Ibis rouge est une <span>espèce d'oiseaux grégaires</span> dont les colonies peuvent atteindre plusieurs milliers d'individus.
             Dans la zone néotropicale, il vit à l'embouchure des fleuves ou dans les marais côtiers.</p>
             <p>Si la majorité de son plumage est d'une couleur dominante <span>rouge</span>, raison pour laquelle un braconnage intense s'est créé autour de cette espèce, les extrémités des ailes de l'Ibis rouge sont noires.
@@ -219,13 +454,39 @@
             On trouve des ibis rouges du sud-est des États-Unis au Brésil en passant par la côte pacifique de l'Amérique centrale et les Grandes Antilles. Deux sous-espèces se partagent cette zone de distribution : la sous-espèce nominale Eudocimus ruber ruber se rencontre au sud, du Venezuela au sud-est du Brésil. L'autre sous-espèce Eudocimus ruber albus se trouve au nord en Floride, en Louisiane, sur le littoral pacifique de l'Amérique centrale et à Cuba.</p>
             <p>Faisant l'objet d'un <span>braconnage intense</span> pour ses plumes rouges, il a un statut d'espèce protégée depuis longtemps dans certains pays (au Surinam en 1955). Il est depuis 1987 inscrit dans l'annexe II de la Convention de Washington sur le commerce des espèces en voie de disparition.
             L'Ibis rouge est <span>l'emblème national</span> de Trinité-et-Tobago.</p>
+            </div>
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            </div>           
+            <div class="link">
+                <a class="link-animals" href="animaux.html#p7"><img src="illu/fleche-gauche.svg"><span>H</span></a>
+                <a class="link-animals" href="animaux.html#p9"><img src="illu/fleche-droite.svg"><span>J</span></a>
+          </div>
         </div>
         <img class="image" src="img/ibisrouge.jpg"> 
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item11">
         <div class="content-abc">                
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>
           <h1><span>Jaguarondi</span><br>Herpailurus yagouaroundi</h1>
+            <div class="texte">
+              <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content"> 
             <p>Le Jaguarondi encore appelé eyra ou chat-loutre est une espèce de <span>félins </span>d'Amérique de petite taille et à la robe uniformément noire, gris-brun ou rousse.
             Habitant tant les forêts primaires que les prairies, il se répartit du sud des États-Unis à l'Argentine. Facile à apprivoiser, il fut utilisé comme chat domestique par les populations pré-colombiennes et pourrait être le seul félin à vivre en couple.</p>
             <p>Le Jaguarondi ressemble à un <span>chat au corps tout en longueur</span> avec de petites pattes fines et une longue queue mince. La tête, petite et aplatie, porte de petites oreilles arrondies. Les yeux de couleur bleu à ambre foncée sont rapprochés et cerclés de poils clairs.
@@ -239,30 +500,83 @@
             <p>La robe terne du Jaguarondi l'a protégé des braconniers, sa fourrure n'ayant que très peu de valeur. Les conflits avec les agriculteurs sont fréquents puisque ce félin peut s'attaquer à la volaille. La menace majeure reste la perte de son habitat, mais l'excellente adaptabilité de ce félin (il peut vivre autant en milieu humide qu'en milieu sec, boisé ou herbeux) lui permet de survivre malgré la baisse des effectifs. Le Jaguarondi est classé en préoccupation mineure (LC) par l'UICN, excepté pour la sous-espèce cacomitli classée en danger (EN).</p>
             <p>Les spécimens d'Amérique du Sud sont classés en annexe II de la CITES (autorisation du commerce international sous licence) tandis que les populations plus sensibles d'Amérique centrale et du Nord sont classées en annexe I (tout commerce interdit). Le Paraguay bénéficie d'un quota d'exportation de trente individus vivants par an depuis 2002. Toutefois, même dans les zones à réglementation moins restrictives, le Jaguarondi n'est pas exploité commercialement.</p>
             <p>Il est <span>protégé</span> sur la majeure partie de son aire de répartition. Seuls le Brésil, le Nicaragua, le Salvador, la Guyane et l'Équateur ne l'ont pas protégé. La chasse est réglementée au Pérou.</p>
+            </div>
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            </div> 
+            <div class="link">
+              <a class="link-animals" href="animaux.html#p8"><img src="illu/fleche-gauche.svg"><span>I</span></a>
+              <a class="link-animals" href="animaux.html#p10"><img src="illu/fleche-droite.svg"><span>K</span></a>
+          </div>
         </div>
         <img class="image" src="img/jaguarondi.jpg"> 
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item12">
-        <div class="content-abc">                        
+        <div class="content-abc"> 
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>                               
           <h1><span>Kiwi<br></span>Apteryx australis</h1>
+              <div class="texte">
+              <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content"> 
             <p>Le Kiwi austral est une espèce d'oiseaux endémique de Nouvelle-Zélande. Son nom est un emprunt au terme māori kivi-kivi qui désigne cet oiseau. Les rats et les phalangers-renard sont connus pour être des prédateurs de cet oiseau.</p>
 
             <p>Le kiwi, de la taille d'<span>une poule</span> (environ 60 cm pour 2 à 3 kg), est doté d'ailes, réduites à des moignons (il est donc incapable de voler), d'un long bec, d'un plumage brunâtre et est dépourvu de queue. Les kiwis ont une vue médiocre, mais un odorat développé. Leurs narines sont situées à l'extrémité de leur long bec. Le kiwi reste caché le jour et sort la nuit chercher sa nourriture, des larves d'insectes qu'il trouve dans le sol grâce à son odorat. C'est un animal qui vit généralement en <span>milieu forestier</span>.</p>
 
             <p>Les kiwis vivent en couple, et ce pendant une trentaine d'années. La femelle est plus grosse que le mâle, et pond des œufs qui représentent environ 20 % de son poids. Proportionnellement, c'est le plus gros œuf du monde. C'est le mâle qui couve les œufs. L'incubation dure de 70 à 80 jours.</p>
-            La femelle est plus grande que le mâle.
+            <p>La femelle est plus grande que le mâle.
             Le plumage des junéviles est plus clair et plus ébouriffé que celui des adultes.
             À l'état sauvage, le Kiwi austral peut vivre une trentaine d'années.</p>
+
             <p>Le Kiwi austral chasse la nuit et se nourrit principalement d'invertébrés (vers, araignées, larves d'insectes...). Sa vue étant médiocre, il repère ses proies grâce à son odorat. Durant les périodes les plus chaudes, il complète son régime alimentaire de fruits.
             Le Kiwi austral vit dans le sud de la Nouvelle-Zélande. On le trouve dans les forêts denses de l'île Stewart, des régions de Southland et de West Coast.</p>
+            </div>
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            </div>           
+          <div class="link">
+              <a class="link-animals" href="animaux.html#p9"><img src="illu/fleche-gauche.svg"><span>J</span></a>
+              <a class="link-animals" href="animaux.html#p11"><img src="illu/fleche-droite.svg"><span>L</span></a>
+          </div>
         </div>  
         <img class="image" src="img/kiwi.jpg"> 
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item13">
         <div class="content-abc">                        
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>
           <h1><span>Linottes melodieuse<br></span>Linaria cannabina</h1>
+             <div class="texte">
+              <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
             <p>La Linotte mélodieuse est une petite espèce de <span>passereaux bruns</span>, à la poitrine rosée de la famille des fringillidés. Son gazouillis est agréable et doux, son vol vif et léger.
             La linotte installe un nid fait à la va-vite, pas très loin du sol, sans trop sembler se préoccuper de le dissimuler aux yeux des prédateurs. Cela lui vaut cette utilisation péjorative de son nom dans le langage des humains : « tête de linotte »; son nom lui vient de sa consommation de linettes (graines de lin) dont elle est friande.</p>
             <p>Cette espèce présente un <span>dimorphisme sexuel</span>: le mâle arborant une coloration rose intense au niveau du front et de la poitrine, absente chez la femelle.</p>
@@ -281,25 +595,77 @@
               Pourtant les services de l'État n’interviennent pas pour faire cesser cette pratique d’un autre âge. La LPO réclame donc :
               <li>le rétablissement de l’état de droit, dans les Landes comme ailleurs ;</li>
               <li>le maintien et le respect de la législation actuelle, indispensable au bon état de la conservation de ces espèces.</li></p>
+            </div>
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            </div>
+            <div class="link">
+              <a class="link-animals" href="animaux.html#p10"><img src="illu/fleche-gauche.svg"><span>K</span></a>
+              <a class="link-animals" href="animaux.html#p12"><img src="illu/fleche-droite.svg"><span>M</span></a>
+            </div>  
         </div>  
         <img class="image" src="img/linottes.jpg">
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item14">
         <div class="content-abc">                        
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>
           <h1><span>Mara<br></span>Dolichotis patagonum</h1>
+            <div class="texte">
+              <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
             <p>Le Mara est une <span>espèce de rongeurs </span>de la famille des Cavidés, comme les cobayes communs, bien que son apparence rappelle celle des lièvres. Ce mammifère est endémique d'Argentine et classé dans la Liste rouge de l'UICN comme <span>« quasi menacé »</span>. Après le capybara et les castors, ce mara est le troisième plus gros rongeur vivant.</p>
             <p>L'espèce a été décrite pour la première fois en 1780 par le zoologiste allemand Eberhard August Wilhelm von Zimmermann (1743-1815). Ces animaux sont nommés en français Mara, Lièvre de Patagonie ou Lièvre des pampas ou encore Lièvre des pampas de Patagonie pour les distinguer des viscaches appelées de même.</p>
             <p>Le mara mesure entre 70 et 75 centimètres de la tête à la queue et pèse de 8 à 16 kilogrammes. Ses oreilles et membres sont particulièrement longs. Ses pattes arrière sont plus grandes et musclées que ses pattes avant. Il a notamment un radius plus longs que l'humérus. Les pattes avant ont quatre doigts tandis que celles arrière en ont seulement trois. Il a un pelage dorsal gris avec une tache blanche sur la croupe séparée de la fourrure dorsale par une zone noire. En outre, le mara a un ventre blanc avec un flanc et un cou tendant à l'orange. Sa queue est courte (environ 5 cm) et presque sans poils. Bâti pour la course, le mara est extrêmement rapide pour un animal de sa taille : il peut sprinter à 55 km/h en moyenne avec des pointes à 80 km/h sur de courtes distances et il peut bondir jusqu'à 2 mètres à la verticale. Il peut vivre de 20 ans a 25 ans selon les individus.</p>
             <p>Cet animal est naturellement présent en Argentine. Il habite les vastes savanes sèches à buissons et arbustes et les régions semi-désertiques de la Patagonie où les hivers sont très froids et les étés très chauds. Il creuse ses propres terriers qui peuvent être très profonds (jusqu'à 10 mètres) ou en utilise des abandonnés. On peut parfois le trouver dans des caves.</p>
             <p>Ce sont des animaux très <span>sociaux </span>: ils peuvent vivre dans des groupes de 10 à 30 individus et ils communiquent par différents sons, des petits bruits graves aux sifflements aigus comme le cochon d'Inde.</p>
+            </div>
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            </div>
+          <div class="link">
+            <a class="link-animals" href="animaux.html#p11"><img src="illu/fleche-gauche.svg"><span>L</span></a>
+            <a class="link-animals" href="animaux.html#p13"><img src="illu/fleche-droite.svg"><span>N</span></a>
+          </div>  
         </div>
         <img class="image" src="img/mara.jpg">
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item15">
         <div class="content-abc">                                
-          <h1><span>Numbat</span>Myrmecobius fasciatus</h1>
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>
+          <h1><span>Numbat<br></span>Myrmecobius fasciatus</h1>
+            <div class="texte">
+              <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
             <p>Numbat est un <span>petit marsupial</span> endémique d'Australie-Occidentale. C'est le seul membre du genre Myrmecobius et de la famille Myrmecobiidae, l'une des trois familles qui composent l'ordre des Dasyuromorphia, regroupant l'ensemble des carnivores marsupiaux.</p>
             <p>Le numbat mesure entre 17,5 et 29 cm de long et sa queue mesure de 12 à 21 cm. Le mâle pèse entre 300 et 715 g (597 g en moyenne) et la femelle entre 320 et 678 g (478 g en moyenne). La tête est petite avec un museau fin. Une bande noire horizontale traverse les yeux, elle est soulignée par une ligne blanche. Le pelage est court, raide et peu dense. Le dos est brun-roux à l'avant et devient progressivement brun foncé puis noir sur la croupe. Il est parcouru par 4 à 11 bandes transversales blanches qui sont nettes et larges sur la croupe et de moins en moins visibles à l'avant du corps. Le pelage est blanc sur le ventre. La femelle possède 4 tétons recouverts de poils dorés, elle n'a pas de marsupium. Les poils de la queue sont bruns et blancs, ils sont plus longs que sur le reste du corps.</p>
             <p>Comme la plupart des mammifères qui se nourrissent de termites ou de fourmis, Myrmecobius fasciatus a un maxillaire dégénéré avec des dents qui ne sont pas fonctionnelles et il est incapable de mâcher. Néanmoins il a une <span>formule dentaire analogue</span> à celle des autres marsupiaux.</p>
@@ -307,13 +673,39 @@
             <p>Les numbats peuvent être parasités par les tiques Ixodes vestitus. myrmecobii et Amblyomma triguttatum, les mouches Echidnophaga myrmecobii et E. perilis ainsi que par la mite Mesolaelaps australiensis. Des nématodes (Beveridgeiella calabyi, B. inglisi) ont également été trouvés dans le tube digestif de certains individus.</p>
             <p>Numbat était autrefois répandu dans le sud et le centre de l'Australie, des côtes ouest à la zone subaride de l'ouest de la Nouvelle-Galles du Sud. Il ne vit plus désormais que dans quelques forêts d'eucalyptus et des zones boisées du sud-ouest de l'Australie occidentale. Sa raréfaction est principalement due à la destruction de son habitat pour les besoins agricoles et à la prédation des chats sauvages4 et des renards. Malgré le fait que l'essentiel de leur habitat actuel ne risque plus d'être déboisé, les populations qui subsistent sont si réduites que l'UICN considère aujourd'hui l'espèce en danger. Le Zoo de Perth est un des rares zoos à abriter le myrmécobie à bandes.</p>
             <p>On estime qu'il ne reste en 2016 à l'état sauvage, plus que <span>800 individus adultes</span> qui occupent une superficie totale de 1 200 km</p>
+            </div>
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            </div>          
+            <div class="link">
+            <a class="link-animals" href="animaux.html#p12"><img src="illu/fleche-gauche.svg"><span>M</span></a>
+            <a class="link-animals" href="animaux.html#p14"><img src="illu/fleche-droite.svg"><span>O</span></a>
+          </div>  
         </div>
         <img class="image" src="img/numbat.jpg">
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item16">
-        <div class="content-abc">                                
+        <div class="content-abc"> 
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>                                       
           <h1><span>Olinguito<br></span>Bassaricyon neblina</h1>
+            <div class="texte">
+              <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
             <p>Bassaricyon neblina, communément appelé l’Olinguito, mot signifiant en espagnol « petit olingo », est une espèce de mammifères du genre <span>Bassaricyon</span> et de la famille des Procyonidés. Découvert en 2013, il vit dans le nord des Andes.</p>
             <p>Comme tous les Procyonidés, l'Olinguito est omnivore. Il se nourrit principalement de fruits, mais aussi parfois d'insectes et de nectar.
             <p>Il demeure la plupart du temps dans les arbres et s'active surtout la nuit.</p>
@@ -321,26 +713,78 @@
             <p>Il n'a qu'un petit à la fois. Mâles et femelles sont de la même taille.</p>
             <p>Le National Museum of Natural History a annoncé sa découverte le 15 août 2013. Bassaricyon neblina est distinct des autres olingos et du Kinkajou4. Kristofer Helgen, le conservateur du musée, rappelle que des spécimens empaillés de cette espèce étaient conservés depuis un siècle dans son musée, des tests ADN ayant permis de le distinguer des autres olingos et du kinkajou à face pâle, ce qui a amené les zoologistes à le rechercher dans la cordillère des Andes.</p>
             <p>C'est le <span>premier mammifère découvert</span> en Amérique depuis 35 ans.</p>
+            </div>
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            </div>           
+          <div class="link">
+            <a class="link-animals" href="animaux.html#p13"><img src="illu/fleche-gauche.svg"><span>N</span></a>
+            <a class="link-animals" href="animaux.html#p15"><img src="illu/fleche-droite.svg"><span>P</span></a>
+          </div>  
         </div>    
         <img class="image" src="img/olinguito.jpg">
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item17">
-        <div class="content-abc">                                
+        <div class="content-abc">
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>                                        
           <h1><span>Pekan<br></span>Martes pennanti</h1>
+            <div class="texte">
+              <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
             <p>Le Pékan est une espèce de la famille des <span>Mustélidés</span>. C'est un petit mammifère carnivore d'Amérique du Nord. Cette martre est aussi appelée entre autres Martre pêcheuse ou Martre de Pennant.</p>
             <p>Les mâles mesurent de 90 à 120 cm et pèsent de 3,5 à 6 kg. Les femelles mesurent de 75 à 95 cm et pèsent de 2 à 2,5 kg. Chez les deux sexes, la queue mesure de 37 à 41 cm.</p>
             <p>La fourrure du Pékan change selon les saisons. En hiver, la <span>fourrure est dense et brillante</span>. En été, elle s'éclaircit considérablement. Les Pékans muent à la fin de l'été.</p>
             <p>Le Pékan se nourrit entre autres de petits mammifères (souris, campagnols...) mais le plus souvent il aime consommer de plus grosses proies comme des écureuils, des lièvres et même des martres d'Amérique. Le Pékan a parfois des tendances charognardes. Il aime également les porcs-épics, dont il est pratiquement le seul prédateur (il l'attaque dans les arbres, jusqu'à ce que le rongeur tombe de fatigue). Le Pékan peut aussi attaquer des animaux domestiques en liberté, comme les chats considérés comme des compétiteurs dans la chasse aux petits rongeurs.</p>
             <p>En français, cette martre est appelée Pékan parfois orthographié pécan, Martre pêcheuse (France) Martre de Pennant (en l'honneur du naturaliste britannique Thomas Pennant qui l'a décrite pour la première fois en 1771) et plus rarement Martre de pékan.</p>
             <p>L'espèce a été décrite pour la première fois en 1777 par le naturaliste allemand Johann Christian Erxleben (1744-1777).</p>
+          </div>
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+          </div>  
+          <div class="link">
+            <a class="link-animals" href="animaux.html#p14"><img src="illu/fleche-gauche.svg"><span>O</span></a>
+            <a class="link-animals" href="animaux.html#p16"><img src="illu/fleche-droite.svg"><span>Q</span></a>
+          </div> 
         </div>
         <img class="image" src="img/pekan.jpg">
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item18">
-        <div class="content-abc">                                
-          <h1><span>Quokka</span>Setonix brachyurus</h1>
+        <div class="content-abc">
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>                                        
+          <h1><span>Quokka<br></span>Setonix brachyurus</h1>
+            <div class="texte">
+              <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
             <p>Le quokka est un <span>petit marsupial</span> de la famille des macropodidés. Seul membre du genre Setonix, son nom est un dérivé du mot nyungar « gwaga ». Il se trouve en Australie-Occidentale.</p>
             <p>Le quokka pèse de 2,5 à 5 kg et mesure de 40 à 54 cm de long, avec une queue relativement courte pour un marsupial, d’une longueur de 25 à 30 cm. Sa fourrure, au poil grossier, est d'un brun gris sur le dos virant au chamois sous le ventre. C'est un animal trapu, avec des oreilles rondes et une tête courte et large. Sa durée de vie est de 5 à 10 ans.</p>
             <p>Il est l'un des rares marsupiaux à posséder, comme les primates, une <span>vision trichromatique</span>.</p>
@@ -353,37 +797,115 @@
             <p>Puisque beaucoup d'espèces invasives ont rejoint le territoire australien, la population du quokka est en baisse. En 2008, il est ainsi classé parmi les espèces animales dites <span>« vulnérables » </span>dans la liste rouge de l'UICN en raison de la forte diminution de sa population suite à l'introduction de prédateurs non naturels comme le renard ou le chat sauvage.</p>
             <p>Le pays interdit ainsi sa possession comme animal domestique de compagnie. Il s'agit d'une espèce protégée. Sa présence limitée fait du quokka l'un des marsupiaux les plus préservés.</p>
             <p>L'exploitation à ciel ouvert, le développement agricole, le défrichement, le brûlage des marécages restants et l'expansion des logements ont réduit l'habitat des quokkas, contribuant au déclin de l'espèce. Bien qu'ils s'accouplent constamment, généralement un jour après la naissance des jeunes, la petite taille de la portée, ainsi que l'espace restreint et les prédateurs menaçants, contribuent à la rareté de l'espèce sur le continent.</p>
+          </div>
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+          </div> 
+          <div class="link">
+            <a class="link-animals" href="animaux.html#p15"><img src="illu/fleche-gauche.svg"><span>P</span></a>
+            <a class="link-animals" href="animaux.html#p17"><img src="illu/fleche-droite.svg"><span>R</span></a>
+          </div> 
         </div>
         <img class="image" src="img/quokka.jpeg">
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item19">
-        <div class="content-abc">                                
+        <div class="content-abc">
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>                                        
           <h1><span>Roitelet huppe<br></span>Regulus regulus</h1>
+            <div class="texte">
+              <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
             <p>Le Roitelet huppé est une petite espèce de <span>passereaux</span> de la famille des Regulidae.</p>
             <p>Son aire de répartition couvre la quasi-totalité de la zone paléarctique (Tunisie, Algérie, Europe, Moyen-Orient, Russie, Asie centrale, Himalaya, Chine, Corées et Japon).</p>
             <p>Le Roitelet huppé est un des <span>plus petits oiseaux</span> d'Europe avec une taille de 9 cm environ et un poids de 4 à 7 grammes. Le bec est noir, fin et pointu. Les pattes brun clair ont des doigts puissants permettant à l'oiseau de se tenir la tête en bas quand il se nourrit. Le plumage est jaune-vert dans sa partie supérieure, les ailes plus noirâtres ont deux raies blanches, le mâle a une calotte jaune et orange en son centre, elle est bordée d'un trait noir, celle de la femelle est jaune pur. Les plumes de la tête forment un diadème qui a donné son nom au Roitelet, elles se hérissent en cas d'excitation.</p>
             <p>Le Roitelet se nourrit essentiellement d'insectes et d'araignées, ses besoins deviennent énormes en période de migration; constamment en mouvement, son poids lui permet d'atteindre les rameaux les plus fins. Il inspecte branches et rameaux de conifères, en hauteur de préférence, au besoin, il descend et cherche sa nourriture même au sol mais ne consomme que ce qui est visible, y compris des graines, sans chercher à soulever les feuilles ou à fouiller les écorces qu'il se contente de sonder. Par temps chaud, il peut aussi cueillir la nourriture en voletant, sans se poser. La quantité consommée varie de 7-9 g au double ou au triple en période froide ou lors des migrations.</p>
+            </div>
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+          </div>           
+        <div class="link">
+            <a class="link-animals" href="animaux.html#p16"><img src="illu/fleche-gauche.svg"><span>Q</span></a>
+            <a class="link-animals" href="animaux.html#p18"><img src="illu/fleche-droite.svg"><span>S</span></a>
+          </div> 
         </div>
         <img class="image" src="img/roitelet-huppe.jpg">
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item20">
-        <div class="content-abc">                                
+        <div class="content-abc">
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>                                        
           <h1><span>Siamang<br></span>Symphalangus syndactylus</h1>
+            <div class="texte">
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
             <p>Le Siamang est le <span>seul</span> représentant du genre <span>Symphalangus</span>.</p>
             <p>Le gibbon siamang habite les forêts équatoriales de Malaisie et de l'île de Sumatra en Indonésie. Il se rencontre en plaine comme en montagne jusqu'à 3 800 m d'altitude.</p>
             <p>Le siamang est le <span>plus grand</span> des gibbons, avec une taille (tête et corps) de 71 à 90 cm. Il mesure debout 1,50 m et c'est le plus grand des gibbons. Ces bras font jusqu'à 1,50 m de long. Il pèse de 10 à 15 kg2.</p>
             <p>Cette espèce est monogame, la femelle dirigeant le couple. La famille vit sur un territoire d'environ 50 h.</p>
             <p>Les siamangs, dans leur milieu naturel, ne descendent que très peu souvent au sol.</p>
             <p>À l'aube et au crépuscule, le mâle et la femelle entament un chant territorial, se répondant l'un et l'autre. Ce chant, grâce au sac laryngique, s'entend à 3 voire 4 km à la ronde.</p>
+          </div>
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+          </div>
+          <div class="link">
+            <a class="link-animals" href="animaux.html#p17"><img src="illu/fleche-gauche.svg"><span>R</span></a>
+            <a class="link-animals" href="animaux.html#p19"><img src="illu/fleche-droite.svg"><span>T</span></a>
+          </div>
         </div>    
         <img class="image" src="img/siamang.jpg">
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item21">
-        <div class="content-abc">                                
+        <div class="content-abc">
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>                                
           <h1><span>Tamandua</span><br>fourmilier</h1>
+            <div class="texte">
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
             <p>Tamandua est un genre de <span>fourmilier</span> composé de deux espèces.</p>
             <p>
             <li>Le Tamandua mexicana (Saussure, 1860) - Tamandua du Mexique</li>
@@ -394,13 +916,39 @@
 
             <p>Ce sont le fourmilier géant ou grand tamanoir (Myrmecophaga tridactyla), mesurant environ 1,9 m de long (avec la queue) ; les tamanduas ou tamandous (Tamandua tetradactyla, T. mexicana), mesurant 90 cm en longueur ; et le Myrmidon (Cyclopes didactylus), petit fourmilier arboricole de 35 cm de long.</p>
             <p>Le fourmilier mange surtout des fourmis, mais il aime aussi des termites et d'autres insectes comme les coccinelles. Il est estimé qu'un fourmilier mange environ 30 000 fourmis par jour.</p>
+          </div>
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+          </div>
+          <div class="link">
+            <a class="link-animals" href="animaux.html#p18"><img src="illu/fleche-gauche.svg"><span>S</span></a>
+            <a class="link-animals" href="animaux.html#p20"><img src="illu/fleche-droite.svg"><span>U</span></a>
+          </div>
         </div>
         <img class="image" src="img/tamandua.jpg">
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item22">
-        <div class="content-abc">                                
+        <div class="content-abc">
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>                                
           <h1><span>Unau<br></span>Paresseux à deux doigts<br></h1>
+            <div class="texte">
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
             <p>Unau, ou parsou mouton en Guyane. Ce <span>paresseux</span> est l'une des deux espèces du genre Choloepus, de la famille des Mégalonychidés. C'est un animal arboricole. On le rencontre dans la canopée de la forêt tropicale humide dans le nord de l'Amérique du Sud.</p>
             <p>Le paresseux à deux doigts est réputé être l'animal <span>le plus lent au monde</span>.</p>
             <p>L'adulte pèse en moyenne 4 à 8 kg et a la taille d'un petit chien : 60 à 85 cm de long avec une queue de 1,4 à 3,3 cm. Il présente un cou court, 4 longs membres d'égale longueur terminés par deux griffes incurvées à l'avant et trois à l'arrière ayant jusqu'à 7 cm de long. La tête est courte et plate, avec un nez retroussé, des oreilles rudimentaires et de grands yeux.</p>
@@ -410,13 +958,39 @@
             <p>Choloepus didactylus est en Guyane française le réservoir principal du parasite Leishmania braziliensis guyanensis transmettant la leishmaniose cutanée à la population des villages forestiers.</p>
             <p>Bien qu'ils ne soient pas considérés comme une espèce en danger, les Choloepus didactylus voient leur habitat diminuer avec la destruction de la forêt humide. La protection de certaines zones est la solution envisagée parallèlement à un élevage en captivité.</p>
             <p>En Guyane, l'espèce est partiellement protégée : leur <span>commerce est interdit</span> et leur transport règlementé.</p>
+          </div>
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+          </div>
+          <div class="link">
+            <a class="link-animals" href="animaux.html#p19"><img src="illu/fleche-gauche.svg"><span>T</span></a>
+            <a class="link-animals" href="animaux.html#p21"><img src="illu/fleche-droite.svg"><span>V</span></a>
+          </div>
         </div>  
         <img class="image" src="img/unau.png">
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item23">
-        <div class="content-abc">                                
+        <div class="content-abc">
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>                                
           <h1><span>Vaquita<br></span>Phocoena sinus</h1>
+            <div class="texte">
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
             <p>Le Marsouin du golfe de Californie, ou Marsouin du Pacifique (Phocoena sinus) est une espèce de <span>marsouins en danger critique d'extinction</span> (il n'en resterait qu'une dizaine d'individus). Elle fait partie de la liste des 100 espèces les plus menacées au monde établie par l'UICN en 2012.</p>
             <p>La première cause de mortalité est l'étouffement suite au piégeage dans des filets de pêches illégaux notamment utilisés par des pêcheurs de totoaba (poisson, également en voie d'extinction, prisé dans la médecine traditionnelle chinoise et vendu dans les marchés noirs de Chine jusqu'à 3 500 euros le kg par les braconniers).</p>
             <p>Le marsouin du golfe de Californie mesure environ 1,50 m et pèse en moyenne 48 kg. Son corps gris est plus foncé sur le dos que sur le ventre ainsi qu'autour des yeux et de la bouche. La femelle donne le jour à un petit tous les deux ans ne mesurant que de 70 à 80 cm de long qu'elle allaite plusieurs mois.</p>
@@ -427,13 +1001,39 @@
             <p>En mai 2016, la branche mexicaine de l’ONG Fonds mondial pour la nature (WWF) estimait leur nombre à une soixantaine et déclarait être « en train de perdre la bataille pour sauver le marsouin du Pacifique » qui meurt en particulier dans les filets dérivants destinés à la pêche d'un poisson, lui-même en voie d'extinction et également endémique de cette région, le totoaba (Totoaba macdonaldi), un Perciforme de la famille des Sciaenidae.</p>
             <p>Avec la récente extinction du dauphin du Yangtsé, il s'agit maintenant de l'espèce la plus menacée des cétacés. Localement il est appelé vaquita marina, le mot vaquita signifiant vachette en espagnol.</p>
             <p>Il s'agit d'une espèce <span>rare au bord de l'extinction</span> qui pourrait totalement disparaître vers 2022 sans que l’homme ait pu vraiment l’étudier. Les filets de pêche, la pollution, le bruit des moteurs et la prospection pétrolière font peser de graves menaces sur son existence.</p>
+          </div>
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+          </div>
+          <div class="link">
+            <a class="link-animals" href="animaux.html#p20"><img src="illu/fleche-gauche.svg"><span>U</span></a>
+            <a class="link-animals" href="animaux.html#p22"><img src="illu/fleche-droite.svg"><span>W</span></a>
+          </div>
         </div>
         <img class="image" src="img/vaquita.jpg">
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item24">
-        <div class="content-abc">                                
+        <div class="content-abc">
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>                                
           <h1><span>Watusi<br></span>Bos taurus primigenius</h1>
+            <div class="texte">
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
             <p>Le watusi est un <span>bovin domestique</span> de l'Afrique de l'Est.</p>
             <p>Watusi est une espèce d'origine africaine, issue de la domestication africaine du Bos taurus primigenius comme cela est attesté pour d'autres espèces africaines du même type (Muturu, Namchi, N'dama). Aucun lien génétique n'a pu être démontré entre le Bos taurus domestiqué en Afrique et zébu indien.</p>
             <p>Le nom est un dérivé du mot watutsi (pluriel swahili de Tutsi, équivalent du mot kinyarwanda Batutsi) ; pour les Rwandais, comme pour d'autres peuples est-africains, ce bœuf est un animal sacré et respecté.</p>
@@ -443,37 +1043,115 @@
             <p>Malgré son aspect de bête sauvage, il est en fait <span> plutôt docile et très sociable</span>, et vit en troupeaux.</p>
             <p>Il est à la base de la vie quotidienne et des croyances de plusieurs peuples d'Afrique. En effet, il fournit de nombreux produits : lait, sang (la bête n'est pas abattue), cuir, cornes, urine (qui sert de désinfectant) et même bouse (combustible apprécié dans des pays où les forêts sont rares). La possession d'un troupeau de ces animaux est un signe de puissance et de richesse (des têtes de bétail sont données à titre de dot lors des mariages).</p>
             <p>Par son utilité pratique comme son aspect, cet animal a une valeur sacrée pour plusieurs peuples de la région (pour qui il serait tabou de le tuer), et plusieurs conflits ont eu (et ont toujours) pour objet la possession des troupeaux.</p>
+           </div>
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+          </div>
+          <div class="link">
+            <a class="link-animals" href="animaux.html#p21"><img src="illu/fleche-gauche.svg"><span>V</span></a>
+            <a class="link-animals" href="animaux.html#p23"><img src="illu/fleche-droite.svg"><span>X</span></a>
+          </div>
           </div>  
         <img class="image" src="img/watusi.jpg">
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item25">
-        <div class="content-abc">                                
+        <div class="content-abc">
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>                                
           <h1><span>Xerus<br></span>Xerus rutilus</h1>
+            <div class="texte">
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
             <p>Xerus est un genre de <sapn>petits rongeurs</sapn> proches de l'écureuil vivant sur le continent africain. Il sait se mettre en position debout.</p>
             <p>Il vit dans le désert, en <span>solitaire</span>, dans de très grands terriers. Les femelles et les mâles vivent séparément.</p>
             <p>Cette espèce est <span>la plus petite</span> du genre Xerus. Elle mesure de 20 à 25 cm de long pour un poids allant de 260 à 420 g. Elle ne possède pas de rayures contrairement aux autres espèces du genre.</p>
             <p>Cette espèce est présente au Soudan, en Érythrée, à Djibouti, en Éthiopie, en Somalie, en Ouganda, au Kenya et en Tanzanie.</p>
             <p>Xerus rutilus est diurne et généralement <span>solitaire.</span></p>
+            </div>
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+          </div>
+          <div class="link">
+            <a class="link-animals" href="animaux.html#p22"><img src="illu/fleche-gauche.svg"><span>W</span></a>
+            <a class="link-animals" href="animaux.html#p24"><img src="illu/fleche-droite.svg"><span>Y</span></a>
+          </div>
         </div>  
         <img class="image" src="img/xerus.jpg">
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item26">
         <div class="content-abc">                                
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>
           <h1><span>Yack<br></span>Bos grunniens, Bos mutus</h1>
+            <div class="texte">
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
             <p>Le yack ou yak est une grande espèce de <span>ruminant domestique</span> à longue toison de l'Himalaya. La femelle du yak est appelée dri ou drimo par les Tibétains et nak par les sherpas.</p>
             <p>Les deux orthographes yack et yak sont répandues en français et aussi correctes l'une que l'autre. L'étymologie de yak (du tibétain g.yag via l'anglais yak, selon le TLFi) est plus ancienne (1791). L'orthographe yack semble avoir été employée, de façon courante mais discontinue, dès 1808.</p>
             <p>Le yak ne meugle pas comme les bovins domestiques européens, mais <span>grogne et couine</span>, ce qui a inspiré son nom scientifique Bos grunniens « bœuf qui grogne ».</p>
             <p>La population de yacks blancs, une espèce rare vivant sur le plateau Qinghai-Tibet, dépasse les 40 000.</p>
             <p>Vivant sur le plateau Qinghai-Tibet, situé à une altitude de plus de 3000 mètres, le yack blanc, une espèce originaire du district autonome tibétain de Tianzhu dans le Gansu (nord-ouest), a vu sa population atteindre les 41 500 individus, dont 4000 de race pure, grâce à la protection et la généralisation des techniques de multiplication depuis trente ans. Spécialité animale locale, les yacks blancs figurent parmi les 78 espèces d'animaux et d'oiseaux protégées en Chine.</p>
+          </div>
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+          </div>
+          <div class="link">
+            <a class="link-animals" href="animaux.html#p23"><img src="illu/fleche-gauche.svg"><span>X</span></a>
+            <a class="link-animals" href="animaux.html#p25"><img src="illu/fleche-droite.svg"><span>Z</span></a>
+          </div>
         </div>
         <img class="image" src="img/yack.jpg">
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item27">
         <div class="content-abc">                                        
-         <h1><span>Zibeline<br></span>Martes zibellina</h1>
+          <div class="content-header">
+            <img class="content-header-image" alt="logo-edwina" src="illu/logoer.svg">
+            <p>abecedaire</p>
+            <a href="#main-menu" class="menu-toggle home-illu"><img src="illu/menu-burger.svg"></a>
+              <nav id="main-menu" class="main-menu">
+                <a href="#main-menu-toggle" class="menu-close"><img src="illu/menu-burger-close.svg"></a>
+                <ul>
+                  <li><a href="filter.html">Les animaux</a></li>
+                  <li><a href="index.html">L'expérience</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" hidden></a>    
+          </div>         
+          <h1><span>Zibeline<br></span>Martes zibellina</h1>
+            <div class="texte">
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+            <div class="p-content">
             <p>La Zibeline est une petite espèce de mammifère carnivore de la famille des mustélidés.</p>
             <p>On la rencontre en Chine, au Japon (Hokkaido), en Corée, en Mongolie, en Pologne et en Russie. Traditionnellement chassée pour sa <span>fourrure remarquable</span>, la zibeline a failli disparaître vers la fin du xixe siècle.</p>
             <p>Elle est aujourd'hui élevée pour approvisionner en fourrure le marché du luxe.</p>
@@ -483,8 +1161,16 @@
             <p>Elle a pu avoir la réputation d'être un animal nuisible alors que dans les faits elle ne s'approche presque jamais des endroits habités. Les chasseurs la recherchent pour sa fourrure, connue pour être très douce et la plus chère du marché, au point que l'espèce a été menacée d'extinction. A la fin du xixe siècle, début du XXe, il ne restait plus que 300 zibelines à l'état sauvage.</p>
             <p>Cette espèce a été décrite pour la première fois en 1758 par le naturaliste suédois Carl von Linné (1707-1778).</p>
             <p>En France, on célèbre les noces de zibeline à l'occasion des 54 ans de mariage.</p>
+          </div>
+            <div class="flechebas"><img src="illu/flechebas.svg"></div>
+          </div>
+          <div class="link">
+            <a class="link-animals" href="animaux.html#p24"><img src="illu/fleche-gauche.svg"><span>Y</span></a>
+            <a class="link-animals" href="animaux.html#p0"><img src="illu/fleche-droite.svg"><span>A</span></a>
+          </div>
         </div>
         <img class="image" src="img/zibeline.jpg">
+        <svg><use xlink:href="#arrow"/></svg>
       </div>
 
       <div class="item" id="item28"></div>
