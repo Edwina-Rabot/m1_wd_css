@@ -181,7 +181,7 @@ body{
 margin: auto;
 line-height: 2em;}
 
-.content-aparition span {
+.content-aparition h3 {
   opacity: 1;
   overflow: hidden;
   -webkit-animation: rotateWord 18s linear 1;
@@ -288,7 +288,7 @@ line-height: 2em;}
   position: relative;
   animation: rotateWord 18s linear 1;
 }
-.discover span {
+.discover h4 {
   transition: all 0.3s;
 }
 .discover::before {
@@ -309,7 +309,7 @@ line-height: 2em;}
   border-bottom-color: var(--color3);
   transform: scale(0.1, 1);
 }
-.discover:hover span {
+.discover:hover h4 {
   letter-spacing: 2px;
 }
 .discover:hover::before {
