@@ -3,8 +3,8 @@
 --gap2: 1em;
 --boxwidth: 100vw;
 --boxheight:100vh;
---color1:#f4f3ee;
---color4:#353535;
+--color1:#EDE7E3;
+--color4:#393232;
 --middlewidth:50vw;
 --middleheight:50vh;}
 
@@ -22,29 +22,40 @@ body{
   font-weight: 200;
 }
 
+
+/* HEADER */
 .content-header
 {
   margin-left: 20px;
-  position: absolute;
-  z-index: 2;
-  right: 2em;
-  top: 2em
-}
-.content-header img
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 2em;
+  height: 3em;}
+
+.content-header p
 {
- width: 3.5vw;
+ font-family: 'Decovar';
+  font-variation-settings: 'WMX2' 500;
+  font-size: 14px;
+  color: var(--color4);
+  align-self: center;
+  text-align: center;
+}
+
+.content-header svg
+{
+     width: 4em;
+}
+
+.content-header-image{
+  height: 3em;
 }
 
 h1{
   font-family: 'Decovar';
   font-variation-settings: 'WMX2' 500;
-  font-size: 30px;
-  margin-bottom: 50px;
 }
 
-.home{
-  z-index: 2;
-}
 .home-illu {
  display: block;
  text-decoration: none;
@@ -52,6 +63,19 @@ h1{
  font-family: 'Decovar';
  font-variation-settings: 'TRMD' 1000;
 }
+
+.content-abc .content-header{
+  position: sticky;
+  top: 0em;
+  background-color: var(--color1);
+  padding: 1em 2em;
+  margin: 0;
+  }
+
+.content-header:first-child{
+  position: inherit;}
+
+/* GROP WRAPPER*/
 
 .item{
  display:block;
@@ -62,17 +86,14 @@ h1{
  -ms-transition:all .5s linear;
  transition:all .5s linear;
  text-align: center;
- font-size: 20px;
+ font-size: 20px;}
 
-}
 .grid-wrapper .item{
   overflow: hidden;
 }
 
 .grid-wrapper .item h1{
  font-family: 'Gelasio';
- font-size: 30px;
- margin-top: 5vh;
 }
 .grid-wrapper .item p{
  font-family: 'Gelasio';
@@ -85,8 +106,35 @@ h1{
  font-family: 'Decovar';
  font-variation-settings: 'WMX2' 500;
  font-size: 30px;
- line-height: 3em;
+ line-height: 2em;
 }
+
+/* LIEN PAGE SUIVANTES PRECEDENTES*/
+
+.link{
+  position: sticky;
+  bottom: 0em;
+  background-color: var(--color1);
+  text-decoration: none;
+  font-family: 'Decovar';
+  font-size: var(--font-title);
+  color: var(--color4);
+  display: flex;
+  place-content: space-evenly;
+  height: 7vh;
+}
+
+.link a{
+  text-decoration: none;
+  color: var(--color4);
+  display: flex;
+  flex-direction: column;}
+
+.link img{
+  width: 0.7em;
+  height: 0.5em;}
+    
+/* ZONE DE TEXTE GAUCHE ANIMAUX */
 
 .content-abc {
   width: var(--middlewidth);
@@ -95,6 +143,7 @@ h1{
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
+
 .content-abc p span{
   font-family: 'Gelasio';
   font-size: var(--font-content);
@@ -107,125 +156,93 @@ h1{
   text-transform: uppercase;
 }
 
-.hovicon {
-    cursor: pointer;
-    text-align: center;
-    position: relative;
-    text-decoration: none;
-    z-index: 1;
-    color: var(--color3);
-}
+.main-menu a:target .content-abc .content-header {
+  position: relative;}
 
-.hovicon:after {
-    pointer-events: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content:'';
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
+.texte{
+  display: flex;
+  align-content: space-between;
 }
+.flechebas{
+  min-width: 1vw;
+  margin: 2em;}
 
-.hovicon {
-    background: var(--color3);
-    -webkit-transition: background 0.2s, color 0.2s;
-    -moz-transition: background 0.2s, color 0.2s;
-    transition: background 0.2s, color 0.2s;
-}
-.hovicon:after {
-    top: -7px;
-    left: -7px;
-    padding: 7px;
-    box-shadow: 0 0 0 1px var(--color4);
-    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
-    -webkit-transform: scale(.8);
-    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
-    -moz-transform: scale(.8);
-    -ms-transform: scale(.8);
-    transition: transform 0.2s, opacity 0.2s;
-    transform: scale(.8);
-    opacity: 0;
-}
-.hovicon:after {
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-}
-.hovicon:hover:after {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-}
+/* ZONE IMAGE DROITE ANIMAUX */
 
 .image {
-    float: left;
-    height: var(--boxheight);
-    width: var(--middlewidth);
-    position: relative; 
-    object-fit: cover;
-    object-position: right top;
+  float: left;
+  height: var(--boxheight);
+  width: var(--middlewidth);
+  position: relative; 
+  object-fit: cover;
+  object-position: right top;
+  transition:all 2s linear;
 }
 
 .image:hover {
-    object-position: left top;
-    transition:all .3s linear;
+  object-position: left top;
+  transition:all 2s linear;
 }
 
 .image img {
-    height: var(--boxheight);
-    width: var(--boxwidth);
-    object-fit: cover;
+  height: var(--boxheight);
+  width: var(--boxwidth);
+  object-fit: cover;
 }
+
+.grid-wrapper svg{
+  position: relative;
+  left: 4em;
+  bottom: 2em; 
+  height: 1em;
+  z-index: 9;
+}
+
+/* RESPONSIVES */
 
 @media (max-width: 600px){
 .image {
-    height: var(--middleheight);
-    width: var(--boxwidth);
-    object-fit: cover;
+  height: var(--middleheight);
+  width: var(--boxwidth);
+  object-fit: cover;
 }
 .content-abc {
-    width: var(--boxwidth);
-    height: var(--middleheight);
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+  width: var(--boxwidth);
+  height: var(--middleheight);
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 .content-presentation {
-    margin-bottom: 0em;
+  margin-bottom: 0em;
 }
 
 .content-presentation h1 {
-    font-family: 'Decovar';
-    font-variation-settings: 'BLDA' 1000,'TRMD' 1000;
-    font-size: 1em;
-    margin: 15vw 0px 10vw;
-    letter-spacing: 5px;
-    text-align: center;
+  font-family: 'Decovar';
+  font-variation-settings: 'BLDA' 1000,'TRMD' 1000;
+  font-size: 1em;
+  margin: 15vw 0px 10vw;
+  letter-spacing: 5px;
+  text-align: center;
 }
 .presentation {
-    text-align: center;
-    margin: auto;
-    line-height: 2em;
-    width: 85vw;
+  text-align: center;
+  margin: auto;
+  line-height: 2em;
+  width: 85vw;
 }
 
 .content-presentation h1:hover{
   font-family: 'Decovar';
   font-variation-settings: 'BLDA' 0,'TRMD' 1000;
-  font-size: 1em;
-  margin: 15vw 0px 10vw;
-  letter-spacing: 5px;
   transition: all .3s ease-in;
 }
+
 div[class*=box] {
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0em; 
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0em; 
 }
 .btn-one:active span {
   letter-spacing: 2px;
@@ -248,3 +265,5 @@ div[class*=box] {
   opacity: 0; 
   transform: scale(0.1, 1);
 }}
+
+
